@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lettres d'Hugues Panassié à Charles Delaunay</title>
+                <author>Hugues Panassié</author>
+                <respStmt>
+                    <resp>Encodage réalisé dans le cadre du devoir du Master 2 TNAH 2021</resp>
+                    <persName>
+                        <forename>Anne</forename>
+                        <surname>Legrand</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Michèle Hodeir</authority>
+                <date from-iso="1940-11-12" to-iso="1945-07-30"/>
+            </publicationStmt>
+            <sourceDesc>
+                  <msDesc>
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Versailles</settlement>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Ce projet d'encodage de la correspondance d'Hugues Panassié à Charles Delaunay a été réalisé dans le
+                    cadre du cours d'XML-TEI dispensé en master 2 Technologies numériques appliquées à
+                    l'histoire de l'Ecole nationale des chartes (projet 2020-2021). Ces lettres font partie de la collection d'André Hodeir et sont conservées à son domicile.</p>
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <lang xml:lang="fre">Français</lang>
+                    <persName>
+                        <forename>Hugues</forename>
+                        <surname>Panassié</surname>
+                    </persName>
+                    <settlement>Montauban</settlement>
+                    <date when-iso="1940-11-12">12 novembre 1940</date>
+                    <date when-iso="1943-09-16">16 septembre 1943</date>
+                    <date when-iso="1944-11-24">24 novembre 1944</date>
+                    <date when-iso="1944-11-29">29 novembre 1944</date>
+                    <date when-iso="1945-07-30">30 juillet 1945</date>
+                    
+                </correspAction>
+            </correspDesc>
+            <settingDesc></settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        
+    </text>
+</TEI>
