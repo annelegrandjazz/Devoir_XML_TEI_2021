@@ -48,13 +48,58 @@
                     <date when-iso="1944-11-24">24 novembre 1944</date>
                     <date when-iso="1944-11-29">29 novembre 1944</date>
                     <date when-iso="1945-07-30">30 juillet 1945</date>
-                    
-                </correspAction>
+               </correspAction>
+              <correspAction type="received">
+                  <persName>
+                      <forename>Charles</forename>
+                      <surname>Delaunay</surname>
+                  </persName>
+                  <settlement>Paris</settlement>
+              </correspAction>
             </correspDesc>
-            <settingDesc></settingDesc>
+            <settingDesc>
+                <listPlace>
+                    <place></place>
+                    
+                </listPlace>
+            </settingDesc>
+            <particDesc>
+                <listPerson type="famille_Delaunay">
+                    <person sex="male" xml:id="ch_delaunay">
+                        <persName><forename>Charles</forename><surname>Delaunay</surname></persName>
+                    </person>
+                    <person sex="male" xml:id="r_delaunay">
+                        <persName><forename>Robert</forename><surname>Delaunay</surname></persName>
+                    </person>
+                    <person sex="female" xml:id="s_delaunay">
+                        <persName><forename>Sonia</forename><surname>Delaunay</surname></persName>
+                    </person>
+                    <listRelation>
+                        <relation name="married_couple" mutual="#s_delaunay #r_delaunay" type="first_marriage"/>
+                        <relation name="child" active="#ch_delaunay" passive="#s_delaunay #r_delaunay"/>
+                    </listRelation>
+                </listPerson>
+                <listPerson type="famille_nourry">
+                    <person sex="female" xml:id="Mme_Nourry">
+                        
+                    </person>
+                </listPerson>
+            </particDesc>
         </profileDesc>
     </teiHeader>
     <text>
-        
+        <body xml:lang="fr">
+            <div type="letter">
+                <head>Lettre d'<persName n="sender">Hugues Panassié</persName> à <persName n="recipient">Charles Delaunay</persName></head>
+                <opener>
+                    <dateline>
+                        <date when-iso="1940-11-12">12 novembre 1940</date>
+                    </dateline>
+                   <salute>Vieux <persName ref="#ch_delaunay">Charles</persName>,</salute>
+                </opener>
+                <p>Je tape cette lettre à 2 exemplaires, et j'envoie l'un chez Mme Nourry, l'autre à Mougins, pour qu'elle ait plus de chances de vous parvenir.</p>
+            </div>
+            
+        </body>
     </text>
 </TEI>
