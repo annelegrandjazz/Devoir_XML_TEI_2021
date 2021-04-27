@@ -19,7 +19,7 @@
                 <date from-iso="1940-11-12" to-iso="1945-07-30"/>
             </publicationStmt>
             <sourceDesc>
-                  <msDesc>
+                <msDesc>
                     <msIdentifier>
                         <country>France</country>
                         <settlement>Versailles</settlement>
@@ -29,9 +29,11 @@
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>Ce projet d'encodage de la correspondance d'Hugues Panassié à Charles Delaunay a été réalisé dans le
-                    cadre du cours d'XML-TEI dispensé en master 2 Technologies numériques appliquées à
-                    l'histoire de l'Ecole nationale des chartes (projet 2020-2021). Ces lettres font partie de la collection d'André Hodeir et sont conservées à son domicile.</p>
+                <p>Ce projet d'encodage de la correspondance d'Hugues Panassié à Charles Delaunay a
+                    été réalisé dans le cadre du cours d'XML-TEI dispensé en master 2 Technologies
+                    numériques appliquées à l'histoire de l'Ecole nationale des chartes (projet
+                    2020-2021). Ces lettres font partie de la collection d'André Hodeir et sont
+                    conservées à son domicile.</p>
             </projectDesc>
         </encodingDesc>
         <profileDesc>
@@ -48,19 +50,34 @@
                     <date when-iso="1944-11-24">24 novembre 1944</date>
                     <date when-iso="1944-11-29">29 novembre 1944</date>
                     <date when-iso="1945-07-30">30 juillet 1945</date>
-               </correspAction>
-              <correspAction type="received">
-                  <persName>
-                      <forename>Charles</forename>
-                      <surname>Delaunay</surname>
-                  </persName>
-                  <settlement>Paris</settlement>
-              </correspAction>
+                </correspAction>
+                <correspAction type="received">
+                    <persName>
+                        <forename>Charles</forename>
+                        <surname>Delaunay</surname>
+                    </persName>
+                    <settlement>Paris</settlement>
+                </correspAction>
             </correspDesc>
             <settingDesc>
-                <listPlace>
-                    <place></place>
-                    
+                <listPlace type="France">
+                    <place xml:id="france" type="country">
+                        <placeName type="country"><country>France</country></placeName>
+                    </place>
+                    <place xml:id="paris" type="city">
+                        <placeName><country>France</country><settlement type="city"
+                                >Paris</settlement></placeName>
+                    </place>
+                    <place xml:id="mougins" type="town">
+                        <placeName><country>France</country><settlement type="town"
+                                >Mougins</settlement></placeName>
+                    </place>
+
+                </listPlace>
+                <listPlace type="Etranger">
+                    <place xml:id="allemagne" type="country">
+                        <placeName type="country"><country>Allemagne</country></placeName>
+                    </place>
                 </listPlace>
             </settingDesc>
             <particDesc>
@@ -75,13 +92,66 @@
                         <persName><forename>Sonia</forename><surname>Delaunay</surname></persName>
                     </person>
                     <listRelation>
-                        <relation name="married_couple" mutual="#s_delaunay #r_delaunay" type="first_marriage"/>
-                        <relation name="child" active="#ch_delaunay" passive="#s_delaunay #r_delaunay"/>
+                        <relation name="married_couple" mutual="#s_delaunay #r_delaunay"
+                            type="first_marriage"/>
+                        <relation name="child" active="#ch_delaunay"
+                            passive="#s_delaunay #r_delaunay"/>
                     </listRelation>
                 </listPerson>
                 <listPerson type="famille_nourry">
                     <person sex="female" xml:id="Mme_Nourry">
-                        
+                        <persName><forename>Angèle</forename><surname>Nourry</surname></persName>
+                    </person>
+                    <person sex="male" xml:id="Mr_Nourry">
+                        <persName><forename>Henri</forename><surname>Nourry</surname></persName>
+                    </person>
+                    <person sex="male" xml:id="Pierre_Nourry">
+                        <persName><forename>Pierre</forename><surname>Nourry</surname></persName>
+                    </person>
+                    <listRelation>
+                        <relation name="married_couple" mutual="#Mme_Nourry #Mr_Nourry"
+                            type="first_marriage"/>
+                        <relation name="child" active="#Pierre_Nourry"
+                            passive="#Mme_Nourry #Mr_Nourry"/>
+                    </listRelation>
+                </listPerson>
+
+                <listPerson type="autres">
+                    <person sex="male" xml:id="duke">
+                        <persName><forename>Edward
+                                Kennedy</forename><surname>Ellington</surname><addName>Duke</addName></persName>
+                    </person>
+                    <person sex="male" xml:id="count">
+                        <persName><forename>William
+                                James</forename><surname>Basie</surname><addName>Count</addName></persName>
+                    </person>
+                    <person sex="male" xml:id="armstrong">
+                        <persName><forename>Louis</forename><surname>Armstrong</surname></persName>
+                    </person>
+                    <person sex="male" xml:id="schulzi">
+                        <persName><forename>Dietrich</forename><surname>Schulz-Köhn</surname></persName>
+                    </person>
+                    <person sex="female" xml:id="daidy">
+                        <persName><forename>Andrée</forename><surname>Boyer</surname><addName>Daidy</addName></persName>
+                    </person>
+                    <person sex="male" xml:id="combelle">
+                        <persName><forename>Alix</forename><surname>Combelle</surname></persName>
+                    </person>
+                    <personGrp xml:id="quintette" sex="male" size="5" role="orchestre">
+                        <persName>Quintette du Hot Club de France</persName>
+                    </personGrp>
+                    <person sex="male" xml:id="guy_durand">
+                        <persName><forename>Guy</forename><surname>Durand</surname></persName>
+                    </person>
+                    <person sex="male" xml:id="jean_berard">
+                        <persName><forename>Jean</forename><surname>Bérard</surname></persName>
+                        <occupation>directeur de Pathé-Marconi</occupation>
+                    </person>
+                    <person sex="male" xml:id="grappelli">
+                        <persName><forename>Stéphane</forename><surname>Grappelli</surname></persName>
+                        <note>Dans les années 1930, Stéphane Grappelli opte pour la lettre y à la
+                            fin de son nom puis reprend l'orthographe italienne dans les années
+                            1950.</note>
                     </person>
                 </listPerson>
             </particDesc>
@@ -90,16 +160,70 @@
     <text>
         <body xml:lang="fr">
             <div type="letter">
-                <head>Lettre d'<persName n="sender">Hugues Panassié</persName> à <persName n="recipient">Charles Delaunay</persName></head>
+                <head>Lettre d'<persName n="sender">Hugues Panassié</persName> à <persName
+                        n="recipient">Charles Delaunay</persName></head>
                 <opener>
                     <dateline>
                         <date when-iso="1940-11-12">12 novembre 1940</date>
                     </dateline>
-                   <salute>Vieux <persName ref="#ch_delaunay">Charles</persName>,</salute>
+                    <salute>Vieux <persName ref="#ch_delaunay">Charles</persName>,</salute>
                 </opener>
-                <p>Je tape cette lettre à 2 exemplaires, et j'envoie l'un chez Mme Nourry, l'autre à Mougins, pour qu'elle ait plus de chances de vous parvenir.</p>
+                <p>Je tape cette lettre à 2 exemplaires, et j'envoie l'un chez <persName
+                        ref="#Mme_Nourry">Mme Nourry</persName>, l'autre à <placeName ref="#mougins"
+                        >Mougins</placeName>, pour qu'elle ait plus de chances de vous parvenir.</p>
+                <p>Les nouvelles pour les SWING sont en effet assez surprenantes. Je suis ravi
+                    d'apprendre que la vente est aussi bonne. Mais je ne peux comprendre pourquoi la
+                    vente des disques de nègres ou de juifs est prohibée à Paris alors qu'elle est
+                    permise en <placeName ref="#allemagne">Allemagne</placeName>Allemagne, comme
+                        <persName ref="#schulzi">Dietrich Schulz</persName> me l'a souvent dit ; et
+                    d'ailleurs les catalogues allemands étaient pleins de <persName ref="#duke"
+                        >Duke</persName>, de <persName ref="#armstrong">Louis</persName>, etc.
+                    Comprenez-vous ça, vous? Je serais curieux de connaître l'explication de cette
+                    anomalie. Voilà en tout cas une nouvelle bien contrariante.</p>
+                <p>C'est épatant, en tout cas, que <persName ref="#daidy">Mlle Boyer</persName> ait
+                    mis le <persName ref="#quintette">Quintette</persName> et <persName
+                        ref="#combelle">Combelle</persName> en exclusivité pour SWING. Cette mesure
+                    s'imposait, puisque il n'y a pas d'autres ressources. D'ailleurs le Quintette,
+                    comme vous le notez, est de 1er intérêt au point de vue vente.</p>
+                <p>Votre idée au sujet de <persName ref="#guy_durand">Guy Durand</persName> est
+                    excellente. Je souhaite énormément la publication de cet enregistrement auquel
+                    il a participé, et aussi l'enregistrement d'un morceau à sa mémoire. Faites donc
+                    le maximum pour arranger ça. Si Guy a enregistré plusieurs faces, il sera bon de
+                    les publier toutes, à moins d'un défaut par trop gros.</p>
+                <p>Merci beaucoup de penser à moi pour le fric que me doit Pathé-Marconi. Pour le
+                    cas où vos souvenirs ne seraient pas assez précis, je vous rappelle que nous
+                    n'avons rien touché, en dehors du truc mensuel, pour la deuxième année - <date
+                        when-iso="1939-06-15">15 Juin 1939</date> à <date when-iso="1940-06-15">15
+                        Juin 1940</date> - et qu'étant donné la diminution notable de frais
+                    d'enregistrement au cours de cette année, et la vente constante des anciens
+                    disques, j'ai calculé que nous pourrions bien avoir à toucher 12.000 balles
+                    chacun, et peut-être plus (surtout si par hasard les Anglais avaient payé un
+                    acompte sur les droits quelque temps avant la rupture de Juin dernier).</p>
+                <p>Si vous n'allez pas à <placeName ref="#paris">Paris</placeName>Paris, j'irais
+                    bien volontiers moi-même, du moment qu'il y a quelque chose d'’utile à y faire,
+                    mais dans ce cas je voudrais, si c'était possible, l'assurance de toucher au
+                    moins quelque fric de Pathé-Marconi pour faire face aux dépenses. Il me faudrait
+                    aussi l'assurance de pouvoir revenir au bout de quelque temps dans la zone
+                    libre, car, pour ce qui est de la possibilité de rentrer dans la zone occupée,
+                    je crois l'avoir. Si vous n'y allez pas et si <persName ref="#jean_berard"
+                        >Bérard</persName> tient à ce qu'un de nous de y aille, croyez-vous en son
+                    pouvoir d'obtenir le permis de circuler d'une zone à l'autre? Sera-t-il
+                    seulement possible de le toucher pour lui demander?</p>
+                <p>Ai parfaitement compris la façon de vous écrire de petits billets n'ayant pas
+                    forme de lettre, si vous allez à Paris.</p>
+                <p>Quel est le violoniste du <persName ref="#quintette">Quintette</persName> en
+                    l'absence de <persName ref="#grappelli">Grappelly</persName>Grappelly?</p>
+                <closer>
+                    <salute>Amitié</salute>
+                    <signed>Hugues</signed>
+                </closer>
+                <postscript>
+                    <label>P.S.</label>
+                    <p>Pour le fric, je crois que Pathé-Marconi a le droit de m'envoyer au moins 2.000 balles.</p>
+                </postscript>
+
             </div>
-            
+
         </body>
     </text>
 </TEI>
