@@ -17,12 +17,15 @@
             <publicationStmt>
                 <authority>Michèle Hodeir</authority>
                 <date from-iso="1940-11-12" to-iso="1945-07-30"/>
+                <availability status="restricted"><licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/ https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">
+                    <p>Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) </p></licence></availability>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
                         <country>France</country>
                         <settlement>Versailles</settlement>
+                        <idno type="DOI">1685</idno>
                     </msIdentifier>
                 </msDesc>
             </sourceDesc>
