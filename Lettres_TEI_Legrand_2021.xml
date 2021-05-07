@@ -17,8 +17,12 @@
             <publicationStmt>
                 <authority>Michèle Hodeir</authority>
                 <date from-iso="1940-11-12" to-iso="1945-07-30"/>
-                <availability status="restricted"><licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/ https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">
-                    <p>Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) </p></licence></availability>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/ https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">
+                        <p>Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+                        </p></licence>
+                </availability>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -26,6 +30,7 @@
                         <country>France</country>
                         <settlement>Versailles</settlement>
                         <idno type="DOI">1685</idno>
+                        <idno type="DOI">1674</idno>
                     </msIdentifier>
                 </msDesc>
             </sourceDesc>
@@ -49,7 +54,9 @@
                     </persName>
                     <settlement>Montauban</settlement>
                     <date when-iso="1940-11-12">12 novembre 1940</date>
+                    <idno type="DOI">1685</idno>
                     <date when-iso="1943-09-16">16 septembre 1943</date>
+                    <idno type="DOI">1674</idno>
                     <date when-iso="1944-11-24">24 novembre 1944</date>
                     <date when-iso="1944-11-29">29 novembre 1944</date>
                     <date when-iso="1945-07-30">30 juillet 1945</date>
@@ -81,18 +88,24 @@
                     <place xml:id="allemagne" type="country">
                         <placeName type="country"><country>Allemagne</country></placeName>
                     </place>
+                    <place xml:id="hollande" type="country">
+                        <placeName type="country"><country>Hollande</country></placeName>
+                    </place>
                 </listPlace>
             </settingDesc>
             <particDesc>
                 <listPerson type="famille_Delaunay">
                     <person sex="male" xml:id="ch_delaunay">
                         <persName><forename>Charles</forename><surname>Delaunay</surname></persName>
+                        <occupation>secrétaire du Hot Club de France</occupation>
                     </person>
                     <person sex="male" xml:id="r_delaunay">
                         <persName><forename>Robert</forename><surname>Delaunay</surname></persName>
+                        <occupation>peintre</occupation>
                     </person>
                     <person sex="female" xml:id="s_delaunay">
                         <persName><forename>Sonia</forename><surname>Delaunay</surname></persName>
+                        <occupation>peintre</occupation>
                     </person>
                     <listRelation>
                         <relation name="married_couple" mutual="#s_delaunay #r_delaunay"
@@ -123,28 +136,39 @@
                     <person sex="male" xml:id="duke">
                         <persName><forename>Edward
                                 Kennedy</forename><surname>Ellington</surname><addName>Duke</addName></persName>
+                        <occupation>pianiste, chef d'orchestre et compositeur</occupation>
                     </person>
                     <person sex="male" xml:id="count">
                         <persName><forename>William
                                 James</forename><surname>Basie</surname><addName>Count</addName></persName>
+                        <occupation>pianiste, chef d'orchestre et compositeur</occupation>
                     </person>
                     <person sex="male" xml:id="armstrong">
                         <persName><forename>Louis</forename><surname>Armstrong</surname></persName>
+                        <occupation>trompettiste et chanteur</occupation>
                     </person>
                     <person sex="male" xml:id="schulzi">
                         <persName><forename>Dietrich</forename><surname>Schulz-Köhn</surname></persName>
+                        <occupation>président du Swing-Club de Königsberg, lieutenant de la
+                            Luftwaffe</occupation>
                     </person>
                     <person sex="female" xml:id="daidy">
                         <persName><forename>Andrée</forename><surname>Boyer</surname><addName>Daidy</addName></persName>
+                        <occupation>agent artistique</occupation>
                     </person>
                     <person sex="male" xml:id="combelle">
                         <persName><forename>Alix</forename><surname>Combelle</surname></persName>
+                        <occupation>saxophoniste ténor et clarinettiste</occupation>
                     </person>
                     <personGrp xml:id="quintette" sex="male" size="5" role="orchestre">
                         <persName>Quintette du Hot Club de France</persName>
                     </personGrp>
+                    <personGrp xml:id="chocolate_dandies" sex="male" size="6" role="orchestre">
+                        <persName>Chocolate Dandies</persName>
+                    </personGrp>
                     <person sex="male" xml:id="guy_durand">
                         <persName><forename>Guy</forename><surname>Durand</surname></persName>
+                        <occupation>trompettiste</occupation>
                     </person>
                     <person sex="male" xml:id="jean_berard">
                         <persName><forename>Jean</forename><surname>Bérard</surname></persName>
@@ -155,6 +179,34 @@
                         <note>Dans les années 1930, Stéphane Grappelli opte pour la lettre y à la
                             fin de son nom puis reprend l'orthographe italienne dans les années
                             1950.</note>
+                        <occupation>violoniste</occupation>
+                    </person>
+                    <person sex="male" xml:id="john_kirby">
+                        <persName><forename>John</forename><surname>Kirby</surname></persName>
+                        <occupation>contrebassiste et tubiste</occupation>
+                    </person>
+                    <person sex="male" xml:id="benny_carter">
+                        <persName><forename>Benny</forename><surname>Carter</surname></persName>
+                        <occupation>saxophoniste, clarinettiste, trompettiste, compositeur et chef
+                            d'orchestre</occupation>
+                    </person>
+                    <person sex="male" xml:id="coleman_hawkins">
+                        <persName><forename>Coleman</forename><surname>Hawkins</surname><addName>Hawk</addName></persName>
+                        <occupation>saxophoniste, trompettiste, compositeur et chef
+                            d'orchestre</occupation>
+                    </person>
+                    <person sex="male" xml:id="george_chisholm">
+                        <persName><forename>George</forename><surname>Chisholm</surname></persName>
+                        <occupation>tromboniste</occupation>
+                    </person>
+                    <person sex="male" xml:id="john_williams">
+                        <persName><forename>John</forename><surname>Williams</surname><addName>Jimmy</addName></persName>
+                        <occupation>saxophoniste alto et clarinettiste</occupation>
+                    </person>
+                    <person sex="male" xml:id="lionel_hampton">
+                        <persName><forename>Lionel</forename><surname>Hampton</surname></persName>
+                        <occupation>vibraphoniste, pianiste, percussioniste et chef
+                            d'orchestre</occupation>
                     </person>
                 </listPerson>
             </particDesc>
@@ -163,6 +215,7 @@
     <text>
         <body xml:lang="fr">
             <div type="letter">
+                <pb facs="IMG_1685.JPG"/>
                 <head>Lettre d'<persName n="sender">Hugues Panassié</persName> à <persName
                         n="recipient">Charles Delaunay</persName></head>
                 <opener>
@@ -176,13 +229,14 @@
                         >Mougins</placeName>, pour qu'elle ait plus de chances de vous parvenir.</p>
                 <p>Les nouvelles pour les SWING sont en effet assez surprenantes. Je suis ravi
                     d'apprendre que la vente est aussi bonne. Mais je ne peux comprendre pourquoi la
-                    vente des disques de nègres ou de juifs est prohibée à Paris alors qu'elle est
-                    permise en <placeName ref="#allemagne">Allemagne</placeName>Allemagne, comme
-                        <persName ref="#schulzi">Dietrich Schulz</persName> me l'a souvent dit ; et
-                    d'ailleurs les catalogues allemands étaient pleins de <persName ref="#duke"
-                        >Duke</persName>, de <persName ref="#armstrong">Louis</persName>, etc.
-                    Comprenez-vous ça, vous? Je serais curieux de connaître l'explication de cette
-                    anomalie. Voilà en tout cas une nouvelle bien contrariante.</p>
+                    vente des disques de nègres ou de juifs est prohibée à <placeName ref="#paris"
+                        >Paris</placeName> alors qu'elle est permise en <placeName ref="#allemagne"
+                        >Allemagne</placeName>Allemagne, comme <persName ref="#schulzi">Dietrich
+                        Schulz</persName> me l'a souvent dit ; et d'ailleurs les catalogues
+                    allemands étaient pleins de <persName ref="#duke">Duke</persName>, de <persName
+                        ref="#armstrong">Louis</persName>, etc. Comprenez-vous ça, vous? Je serais
+                    curieux de connaître l'explication de cette anomalie. Voilà en tout cas une
+                    nouvelle bien contrariante.</p>
                 <p>C'est épatant, en tout cas, que <persName ref="#daidy">Mlle Boyer</persName> ait
                     mis le <persName ref="#quintette">Quintette</persName> et <persName
                         ref="#combelle">Combelle</persName> en exclusivité pour SWING. Cette mesure
@@ -222,11 +276,39 @@
                 </closer>
                 <postscript>
                     <label>P.S.</label>
-                    <p>Pour le fric, je crois que Pathé-Marconi a le droit de m'envoyer au moins 2.000 balles.</p>
+                    <p>Pour le fric, je crois que Pathé-Marconi a le droit de m'envoyer au moins
+                        2.000 balles.</p>
                 </postscript>
-
             </div>
-
+            <pb facs="IMG_1674.JPG"/>
+            <div type="letter">
+                <head>Lettre d'<persName n="sender">Hugues Panassié</persName> à <persName
+                        n="recipient">Charles Delaunay</persName></head>
+                <opener>
+                    <dateline>
+                        <date when-iso="1940-11-12">16 septembre 1943</date>
+                    </dateline>
+                    <salute>Vieux <persName ref="#ch_delaunay">Charles</persName>,</salute>
+                </opener>
+                <p>Ci-joint des tas d'épreuves. Quelques remarques : </p>
+                <p><persName ref="#chocolate_dandies">Ch. Dandies</persName> - <persName
+                        ref="#john_kirby">Kirby</persName> joue du tuba et-non de la basse dans les
+                    faces Dee Blues, etc, sauf Goodbye Blues, où il joue réellement de la string
+                    bass.</p>
+                <p><persName ref="#benny_carter">B. Carter</persName> - Dans les faces faites en
+                        <placeName ref="#hollande">Hollande</placeName> où il y a <persName
+                        ref="#coleman_hawkins">Hawkins</persName> (My Buddy, etc), il n’y a pas 3
+                    saxes, etc, il y a seulement comme section mélodique <persName
+                        ref="#coleman_hawkins">Hawk</persName>, <persName ref="#benny_carter"
+                        >Benny</persName>, <persName ref="#george_chisholm">Chisholm</persName> et
+                        <persName ref="#john_williams"/>John Williams (Clarinette).A noter que Benny
+                    joue un passage de ténor dans I ain't got nobody, ainsi que la clarinette dans
+                    ce même disque et dans Mighty like the blues.</p>
+                <p><persName ref="#lionel_hampton">L. Hampton</persName> - Il me parait important de
+                    mentionner que <persName ref="#benny_carter">B. Carter</persName> est l'auteur
+                    des arrangements de la session Shoe shiner's drag, et qu'il joue la clarinette
+                    dans cette face ainsi que dans Muskrat ramble.</p>
+            </div>
         </body>
     </text>
 </TEI>
