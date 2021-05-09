@@ -91,6 +91,9 @@
                     <place xml:id="hollande" type="country">
                         <placeName type="country"><country>Hollande</country></placeName>
                     </place>
+                    <place xml:id="suisse" type="country">
+                        <placeName type="country"><country>Suisse</country></placeName>
+                    </place>
                 </listPlace>
             </settingDesc>
             <particDesc>
@@ -120,9 +123,11 @@
                     </person>
                     <person sex="male" xml:id="Mr_Nourry">
                         <persName><forename>Henri</forename><surname>Nourry</surname></persName>
+                        <occupation>directeur des Établissements Hortsmann</occupation>
                     </person>
                     <person sex="male" xml:id="Pierre_Nourry">
                         <persName><forename>Pierre</forename><surname>Nourry</surname></persName>
+                        <occupation>premier secrétaire du Hot Club de France</occupation>
                     </person>
                     <listRelation>
                         <relation name="married_couple" mutual="#Mme_Nourry #Mr_Nourry"
@@ -166,6 +171,10 @@
                     <personGrp xml:id="chocolate_dandies" sex="male" size="6" role="orchestre">
                         <persName>Chocolate Dandies</persName>
                     </personGrp>
+                    <personGrp xml:id="metronome_all_star" sex="male" size="approx 15"
+                        role="orchestre">
+                        <persName>Metronome All Star</persName>
+                    </personGrp>
                     <person sex="male" xml:id="guy_durand">
                         <persName><forename>Guy</forename><surname>Durand</surname></persName>
                         <occupation>trompettiste</occupation>
@@ -207,6 +216,76 @@
                         <persName><forename>Lionel</forename><surname>Hampton</surname></persName>
                         <occupation>vibraphoniste, pianiste, percussioniste et chef
                             d'orchestre</occupation>
+                    </person>
+                    <person sex="male" xml:id="frank_teschemacher">
+                        <persName><forename>Frank</forename><surname>Teschemacher</surname></persName>
+                        <occupation>clarinettiste et saxophoniste alto</occupation>
+                    </person>
+                    <person sex="male" xml:id="teddy_wilson">
+                        <persName><forename>Teddy</forename><surname>Wilson</surname></persName>
+                        <occupation>pianiste</occupation>
+                    </person>
+                    <person sex="male" xml:id="gene_sedric">
+                        <persName><forename>Gene</forename><surname>Sedric</surname></persName>
+                        <occupation>clarinettiste et saxophoniste ténor</occupation>
+                    </person>
+                    <person sex="male" xml:id="pee_wee_russell">
+                        <persName><forename>Charles</forename><surname>Russell</surname><addName>Pee
+                                Wee</addName></persName>
+                        <occupation>clarinettiste et saxophoniste</occupation>
+                    </person>
+                    <person sex="male" xml:id="tab_smith">
+                        <persName><forename>Talmadge</forename><surname>Smith</surname><addName>Tab</addName></persName>
+                        <occupation>saxophoniste alto</occupation>
+                    </person>
+                    <person sex="male" xml:id="hilton_jefferson">
+                        <persName><forename>Hilton</forename><surname>Jefferson</surname></persName>
+                        <occupation>saxophoniste alto</occupation>
+                    </person>
+                    <person sex="male" xml:id="rex_stewart">
+                        <persName><forename>Rex</forename><surname>Stewart</surname></persName>
+                        <occupation>cornettiste</occupation>
+                    </person>
+                    <person sex="male" xml:id="tricky_sam_nanton">
+                        <persName><forename>Joe</forename><surname>Nanton</surname><addName>Tricky
+                                Sam</addName></persName>
+                        <occupation>tromboniste</occupation>
+                    </person>
+                    <person sex="male" xml:id="jack_maisel">
+                        <persName><forename>Jack</forename><surname>Maisel</surname></persName>
+                        <occupation>batteur</occupation>
+                    </person>
+                    <person sex="male" xml:id="louis_bacon">
+                        <persName><forename>Louis</forename><surname>Bacon</surname></persName>
+                        <occupation>trompettiste et chanteur</occupation>
+                    </person>
+                    <person sex="male" xml:id="red_nichols">
+                        <persName><forename>Ernest</forename><surname>Nichols</surname><addName>Red</addName></persName>
+                        <occupation>cornettiste, chef d'orchestre et compositeur</occupation>
+                    </person>
+                    <person sex="male" xml:id="benny_goodman">
+                        <persName><forename>Benjamin</forename><surname>Goodman</surname><addName>Benny</addName></persName>
+                        <occupation>clarinettiste et chef d'orchestre</occupation>
+                    </person>
+                    <person sex="female" xml:id="ivie_anderson">
+                        <persName><forename>Ivie</forename><surname>Anderson</surname></persName>
+                        <occupation>chanteuse</occupation>
+                    </person>
+                    <person sex="male" xml:id="barney_bigard">
+                        <persName><forename>Barney</forename><surname>Bigard</surname></persName>
+                        <occupation>clarinettiste</occupation>
+                    </person>
+                    <person sex="male" xml:id="johnny_hodges">
+                        <persName><forename>Johnny</forename><surname>Hodges</surname></persName>
+                        <occupation>saxophoniste alto</occupation>
+                    </person>
+                    <person sex="male" xml:id="hayes_alvis">
+                        <persName><forename>Hayes</forename><surname>Alvis</surname></persName>
+                        <occupation>contrebassiste et tubiste</occupation>
+                    </person>
+                    <person sex="male" xml:id="fats_waller">
+                        <persName><forename>Thomas</forename><surname>Waller</surname><addName>Fats</addName></persName>
+                        <occupation>pianiste, chef d'orchestre et compositeur</occupation>
                     </person>
                 </listPerson>
             </particDesc>
@@ -308,6 +387,68 @@
                     mentionner que <persName ref="#benny_carter">B. Carter</persName> est l'auteur
                     des arrangements de la session Shoe shiner's drag, et qu'il joue la clarinette
                     dans cette face ainsi que dans Muskrat ramble.</p>
+                <p><persName ref="#frank_teschemacher">Teschemacher</persName> - Quoi qu'en pensent
+                    les Américains, je suppose que c'est bien Tesch dans Jazz me blues et Sister
+                    Kate en Paramount. Mais comme ne l’aimant plus je ne suis plus aussi sûr de moi,
+                    je vous laisse juge de faire ce qui vous paraîtra le plus probable.</p>
+                <p><persName ref="#teddy_wilson">T. Wilson</persName> - Je n'ai pas vu mentionné le
+                    personnel comprenant 3 saxes dont 2 sont <persName ref="#gene_sedric"
+                        >Sedric</persName> et <persName ref="#pee_wee_russell">Pee Wee
+                        Russell</persName> et le 3ème un type comme Jefferson ou un autre alto de ce
+                    genre (plutôt Tab Smith, il me semble). Je n'ai malheureusement aucun
+                    renseignement à vous donner à ce sujet.</p>
+                <p><persName ref="#rex_stewart">Rex</persName> -Il vous manque une session qui a été
+                    faite juste avant le voyage de <persName ref="#duke">Duke</persName> à
+                        <placeName ref="#paris">Paris</placeName>, donc à placer juste avant les
+                    SWING. C'est Fat Stuff Serenade - I'll come back for more (Vocalion 5448) avec
+                    un personnel comprenant. <persName ref="#tricky_sam_nanton">Tricky
+                        Sam</persName>, <persName ref="#jack_maisel">Jack Maisel</persName>,
+                        <persName ref="#louis_bacon">Louis Bacon</persName> comme vocaliste, j'ai
+                    oublié les autres, et malheureusement mes Jazz Information de cette époque sont
+                    bloqués en <placeName ref="#suisse">Suisse</placeName> d'où on ne peut plus me
+                    les renvoyer. -Je retrouve à l' instant les 2 autres faces "San Juan Hill" et
+                    "Chained to a dream” (Vocalion 5510).</p>
+                <p><persName ref="#red_nichols">R. Nichols</persName> - Dans The New Yorkers - I may
+                    be wrong, vous avez remplacé <persName ref="#pee_wee_russell">Pee Wee</persName>
+                    par <persName ref="#benny_goodman">B. Goodman</persName> à la clarinette. Mais
+                    je suis absolument sûr que c'était bien <persName ref="#pee_wee_russell">Pee
+                        Wee</persName>. Si vous réentendez le disque vous n'aurez aucun doute.</p>
+                <p>Je n'ai pas voulu faire ces corrections ou additions moi-même. Je vous les
+                    soumets, vous ferez comme bon vous semblera.</p>
+                <p>Le N° du <persName ref="#ivie_anderson">Ivie Anderson</persName> (Plantation) est
+                    Variety VA 591.</p>
+                <p>N'ai pas le personnel du <persName ref="#metronome_all_star">Metronome A. S.
+                        Band</persName>.</p>
+                <p>Évidemment, il semblerait plus logique de faire des notices aussi aux "divers",
+                    mais cela en fera un nombre effrayant. Vous me demandez conseil, je suis bien
+                    embarrassé. Etant donné que sur certains on manque totalement de détails
+                    biographiques, le plus simple serait peut-être de laisser tomber. Si, par
+                    contre, vous croyez pouvoir faire quelque chose de suffisamment précis sur
+                    chacun, cela change tout.</p>
+                <p>N'oubliez pas de me retenir les exemplaires de la Disco demandés. Vous ne m'avez
+                    pas répondu à ce sujet.</p>
+                <p>Pour le 1er N° de "Jazz Hot", je pense surtout qu'il serait bon de résumer les
+                    nouvelles importantes depuis la guerre, c'est à dire mettre les lecteurs au
+                    courant des musiciens morts, des principaux changements survenus dans les orch.
+                    en vue ; en somme, mettre tout le monde à la page. Ne trouvez-vous pas?</p>
+                <p>Quand à venir à Paris, le moment ne me parait pas bien choisi, franchement.</p>
+                <closer>
+                    <salute>Bien à vous</salute>
+                    <signed>Hugues</signed>
+                </closer>
+                <postscript>
+                    <label>P.S.</label>
+                    <p>– Rocking Chair et les 2 <persName ref="#duke">Duke</persName> suivants (p.
+                        79 de la Disco) devraient logiquement se placer beaucoup plus loin puisqu'on
+                        y entend <persName ref="#barney_bigard">Barney</persName> et <persName
+                            ref="#johnny_hodges">Hodges</persName>. Ça doit être de 1931.</p>
+                    <p>Dans Jazz à la Carte et Demi-Tasse de <persName ref="#barney_bigard"
+                            >Barney</persName> et probablement les autres de la même session, c'est
+                            <persName ref="#hayes_alvis">Hayes Alvis</persName>.</p>
+                    <p>Les <persName>Fats</persName> faits en 1938 en Angleterre sont placés beaucoup trop tôt. Il me
+                        semble qu'ils viennent juste après les disques de gr. orch. (In gloaming,
+                        The Sheik, etc)</p>
+                </postscript>
             </div>
         </body>
     </text>
