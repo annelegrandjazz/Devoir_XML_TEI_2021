@@ -330,7 +330,7 @@
                 </listOrg>
                 <listOrg type="radio">
                     <org xml:id="radio_nat_franc">
-                        <orgName>Radiodiffusion nationale</orgName>
+                        <orgName notAfter="1945">Radiodiffusion française nationale<addName>Radiodiffusion nationale</addName></orgName>
                     </org>
                 </listOrg>
             </particDesc>
