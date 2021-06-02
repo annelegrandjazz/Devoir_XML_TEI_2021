@@ -31,6 +31,7 @@
                         <settlement>Versailles</settlement>
                         <idno type="DOI">1685</idno>
                         <idno type="DOI">1674</idno>
+                        <idno type="DOI">1779</idno>
                     </msIdentifier>
                 </msDesc>
             </sourceDesc>
@@ -58,8 +59,7 @@
                     <date when-iso="1943-09-16">16 septembre 1943</date>
                     <idno type="DOI">1674</idno>
                     <date when-iso="1944-11-24">24 novembre 1944</date>
-                    <date when-iso="1944-11-29">29 novembre 1944</date>
-                    <date when-iso="1945-07-30">30 juillet 1945</date>
+                    <idno type="DOI">1779</idno>
                 </correspAction>
                 <correspAction type="received">
                     <persName>
@@ -80,7 +80,17 @@
                     </place>
                     <place xml:id="mougins" type="town">
                         <placeName><country>France</country><settlement type="town"
-                                >Mougins</settlement></placeName>
+                                >Mougins</settlement><note>Lieu de résidence de Sonia et Robert
+                                Delaunay en <date when-iso="1940">1940</date>.</note></placeName>
+                    </place>
+                    <place xml:id="chez_nourry" type="building">
+                        <placeName>Chez Madame Nourry</placeName>
+                        <location>
+                            <country>France</country>
+                            <settlement type="town">Paris</settlement>
+                            <district type="arrondissement" n="9">9ème</district>
+                            <placeName type="rue"><num>30</num>rue du conservatoire</placeName>
+                        </location>
                     </place>
 
                 </listPlace>
@@ -161,6 +171,10 @@
                         <occupation>président du Swing-Club de Königsberg, lieutenant de la
                             Luftwaffe</occupation>
                     </person>
+                    <person sex="male" xml:id="h_panassie">
+                        <persName><forename>Hugues</forename><surname>Panassié</surname></persName>
+                        <occupation>président du Hot Club de France</occupation>
+                    </person>
                     <person sex="female" xml:id="daidy">
                         <persName><forename>Andrée</forename><surname>Boyer</surname><addName>Daidy</addName></persName>
                         <occupation>agent artistique</occupation>
@@ -190,8 +204,8 @@
                     <person sex="male" xml:id="grappelli">
                         <persName><forename>Stéphane</forename><surname>Grappelli</surname></persName>
                         <note>Dans les années 1930, Stéphane Grappelli opte pour la lettre y à la
-                            fin de son nom puis reprend l'orthographe italienne dans les années
-                            1950.</note>
+                            fin de son nom de famille puis reprend l'orthographe italienne dans les
+                            années 1950.</note>
                         <occupation>violoniste</occupation>
                     </person>
                     <person sex="male" xml:id="john_kirby">
@@ -349,14 +363,16 @@
                     </dateline>
                     <salute>Vieux <persName ref="#ch_delaunay">Charles</persName>,</salute>
                 </opener>
-                <p>Je tape cette lettre à 2 exemplaires, et j'envoie l'un chez <persName
-                        ref="#Mme_Nourry">Mme Nourry</persName>, l'autre à <placeName ref="#mougins"
-                        >Mougins</placeName>, pour qu'elle ait plus de chances de vous parvenir.</p>
-                <p>Les nouvelles pour les <orgName ref="#swing">SWING</orgName> sont en effet assez
+                <p>Je tape cette lettre à deux exemplaires, et j'envoie l'un <placeName
+                        ref="#chez_nourry">chez</placeName>
+                    <persName ref="#Mme_Nourry">Mme Nourry</persName>, l'autre à <placeName
+                        ref="#mougins">Mougins</placeName>, pour qu'elle ait plus de chances de vous
+                    parvenir.</p>
+                <p>Les nouvelles pour les <orgName ref="#swing">Swing</orgName> sont en effet assez
                     surprenantes. Je suis ravi d'apprendre que la vente est aussi bonne. Mais je ne
                     peux comprendre pourquoi la vente des disques de nègres ou de juifs est prohibée
                     à <placeName ref="#paris">Paris</placeName> alors qu'elle est permise en
-                        <placeName ref="#allemagne">Allemagne</placeName>Allemagne, comme <persName
+                        <placeName ref="#allemagne">Allemagne</placeName>, comme <persName
                         ref="#schulzi">Dietrich Schulz</persName> me l'a souvent dit ; et d'ailleurs
                     les catalogues allemands étaient pleins de <persName ref="#duke"
                     >Duke</persName>, de <persName ref="#armstrong">Louis</persName>, etc.
@@ -365,37 +381,38 @@
                 <p>C'est épatant, en tout cas, que <persName ref="#daidy">Mlle Boyer</persName> ait
                     mis le <persName ref="#quintette">Quintette</persName> et <persName
                         ref="#combelle">Combelle</persName> en exclusivité pour <orgName
-                        ref="#swing">SWING</orgName>. Cette mesure s'imposait, puisque il n'y a pas
-                    d'autres ressources. D'ailleurs le Quintette, comme vous le notez, est de 1er
-                    intérêt au point de vue vente.</p>
+                        ref="#swing">Swing</orgName>. Cette mesure s'imposait, puisque il n'y a pas
+                    d'autres ressources. D'ailleurs le Quintette, comme vous le notez, est de
+                    premier intérêt au point de vue vente.</p>
                 <p>Votre idée au sujet de <persName ref="#guy_durand">Guy Durand</persName> est
                     excellente. Je souhaite énormément la publication de cet enregistrement auquel
                     il a participé, et aussi l'enregistrement d'un morceau à sa mémoire. Faites donc
                     le maximum pour arranger ça. Si Guy a enregistré plusieurs faces, il sera bon de
                     les publier toutes, à moins d'un défaut par trop gros.</p>
-                <p>Merci beaucoup de penser à moi pour le fric que me doit Pathé-Marconi. Pour le
-                    cas où vos souvenirs ne seraient pas assez précis, je vous rappelle que nous
-                    n'avons rien touché, en dehors du truc mensuel, pour la deuxième année - <date
-                        when-iso="1939-06-15">15 Juin 1939</date> à <date when-iso="1940-06-15">15
-                        Juin 1940</date> - et qu'étant donné la diminution notable de frais
-                    d'enregistrement au cours de cette année, et la vente constante des anciens
-                    disques, j'ai calculé que nous pourrions bien avoir à toucher 12.000 balles
-                    chacun, et peut-être plus (surtout si par hasard les Anglais avaient payé un
-                    acompte sur les droits quelque temps avant la rupture de Juin dernier).</p>
-                <p>Si vous n'allez pas à <placeName ref="#paris">Paris</placeName>Paris, j'irais
-                    bien volontiers moi-même, du moment qu'il y a quelque chose d'’utile à y faire,
-                    mais dans ce cas je voudrais, si c'était possible, l'assurance de toucher au
-                    moins quelque fric de <orgName ref="#pathe_marconi">Pathé-Marconi</orgName> pour
-                    faire face aux dépenses. Il me faudrait aussi l'assurance de pouvoir revenir au
-                    bout de quelque temps dans la zone libre, car, pour ce qui est de la possibilité
-                    de rentrer dans la zone occupée, je crois l'avoir. Si vous n'y allez pas et si
+                <p>Merci beaucoup de penser à moi pour le fric que me doit <orgName
+                        ref="#pathe_marconi">Pathé-Marconi</orgName>. Pour le cas où vos souvenirs
+                    ne seraient pas assez précis, je vous rappelle que nous n'avons rien touché, en
+                    dehors du truc mensuel, pour la deuxième année - <date when-iso="1939-06-15">15
+                        Juin 1939</date> à <date when-iso="1940-06-15">15 Juin 1940</date> - et
+                    qu'étant donné la diminution notable de frais d'enregistrement au cours de cette
+                    année, et la vente constante des anciens disques, j'ai calculé que nous
+                    pourrions bien avoir à toucher 12.000 balles chacun, et peut-être plus (surtout
+                    si par hasard les Anglais avaient payé un acompte sur les droits quelque temps
+                    avant la rupture de Juin dernier).</p>
+                <p>Si vous n'allez pas à <placeName ref="#paris">Paris</placeName> j'irais bien
+                    volontiers moi-même, du moment qu'il y a quelque chose d'’utile à y faire, mais
+                    dans ce cas je voudrais, si c'était possible, l'assurance de toucher au moins
+                    quelque fric de <orgName ref="#pathe_marconi">Pathé-Marconi</orgName> pour faire
+                    face aux dépenses. Il me faudrait aussi l'assurance de pouvoir revenir au bout
+                    de quelque temps dans la zone libre, car, pour ce qui est de la possibilité de
+                    rentrer dans la zone occupée, je crois l'avoir. Si vous n'y allez pas et si
                         <persName ref="#jean_berard">Bérard</persName> tient à ce qu'un de nous de y
                     aille, croyez-vous en son pouvoir d'obtenir le permis de circuler d'une zone à
                     l'autre? Sera-t-il seulement possible de le toucher pour lui demander?</p>
                 <p>Ai parfaitement compris la façon de vous écrire de petits billets n'ayant pas
                     forme de lettre, si vous allez à <placeName ref="#paris">Paris</placeName>.</p>
                 <p>Quel est le violoniste du <persName ref="#quintette">Quintette</persName> en
-                    l'absence de <persName ref="#grappelli">Grappelly</persName>Grappelly?</p>
+                    l'absence de <persName ref="#grappelli">Grappelly</persName>?</p>
                 <closer>
                     <salute>Amitié</salute>
                     <signed>Hugues</signed>
@@ -419,19 +436,19 @@
                 </opener>
                 <p>Ci-joint des tas d'épreuves. Quelques remarques : </p>
                 <p><persName ref="#chocolate_dandies">Ch. Dandies</persName> - <persName
-                        ref="#john_kirby">Kirby</persName> joue du tuba et-non de la basse dans les
+                        ref="#john_kirby">Kirby</persName> joue du tuba et non de la basse dans les
                     faces <hi rend="italic">Dee Blues</hi>, etc, sauf <hi rend="italic">Goodbye
                         Blues</hi>, où il joue réellement de la string bass.</p>
                 <p><persName ref="#benny_carter">B. Carter</persName> - Dans les faces faites en
                         <placeName ref="#hollande">Hollande</placeName> où il y a <persName
                         ref="#coleman_hawkins">Hawkins</persName> (<hi rend="italic">My Buddy</hi>,
-                    etc), il n’y a pas 3 saxes, etc, il y a seulement comme section mélodique
+                    etc), il n’y a pas trois saxes, etc, il y a seulement comme section mélodique
                         <persName ref="#coleman_hawkins">Hawk</persName>, <persName
                         ref="#benny_carter">Benny</persName>, <persName ref="#george_chisholm"
-                        >Chisholm</persName> et <persName ref="#john_williams"/>John Williams
-                    (Clarinette).A noter que Benny joue un passage de ténor dans <hi rend="italic">I
-                        ain't got nobody</hi>, ainsi que la clarinette dans ce même disque et dans
-                        <hi rend="italic">Mighty like the blues</hi>.</p>
+                        >Chisholm</persName> et <persName ref="#john_williams">John
+                        Williams</persName> (Clarinette).A noter que Benny joue un passage de ténor
+                    dans <hi rend="italic">I ain't got nobody</hi>, ainsi que la clarinette dans ce
+                    même disque et dans <hi rend="italic">Mighty like the blues</hi>.</p>
                 <p><persName ref="#lionel_hampton">L. Hampton</persName> - Il me parait important de
                     mentionner que <persName ref="#benny_carter">B. Carter</persName> est l'auteur
                     des arrangements de la session <hi rend="italic">Shoe shiner's drag</hi>, et
@@ -444,15 +461,16 @@
                     plus aussi sûr de moi, je vous laisse juge de faire ce qui vous paraîtra le plus
                     probable.</p>
                 <p><persName ref="#teddy_wilson">T. Wilson</persName> - Je n'ai pas vu mentionné le
-                    personnel comprenant 3 saxes dont 2 sont <persName ref="#gene_sedric"
+                    personnel comprenant trois saxes dont deux sont <persName ref="#gene_sedric"
                         >Sedric</persName> et <persName ref="#pee_wee_russell">Pee Wee
-                        Russell</persName> et le 3ème un type comme Jefferson ou un autre alto de ce
-                    genre (plutôt Tab Smith, il me semble). Je n'ai malheureusement aucun
-                    renseignement à vous donner à ce sujet.</p>
+                        Russell</persName> et le troisième un type comme <persName
+                        ref="#hilton_jefferson">Jefferson</persName> ou un autre alto de ce genre
+                    (plutôt <persName ref="#tab_smith">Tab Smith</persName>, il me semble). Je n'ai
+                    malheureusement aucun renseignement à vous donner à ce sujet.</p>
                 <p><persName ref="#rex_stewart">Rex</persName> -Il vous manque une session qui a été
                     faite juste avant le voyage de <persName ref="#duke">Duke</persName> à
                         <placeName ref="#paris">Paris</placeName>, donc à placer juste avant les
-                        <orgName ref="#swing">SWING</orgName>. C'est <hi rend="italic">Fat Stuff
+                        <orgName ref="#swing">Swing</orgName>. C'est <hi rend="italic">Fat Stuff
                         Serenade</hi> - <hi rend="italic">I'll come back for more</hi> (<orgName
                         ref="#vocalion">Vocalion</orgName> 5448) avec un personnel comprenant.
                         <persName ref="#tricky_sam_nanton">Tricky Sam</persName>, <persName
@@ -461,7 +479,7 @@
                     malheureusement mes <orgName ref="#jazz_information"><hi rend="italic">Jazz
                             Information</hi></orgName> de cette époque sont bloqués en <placeName
                         ref="#suisse">Suisse</placeName> d'où on ne peut plus me les renvoyer. -Je
-                    retrouve à l' instant les 2 autres faces <hi rend="italic">San Juan Hill</hi> et
+                    retrouve à l'nstant les deux autres faces <hi rend="italic">San Juan Hill</hi> et
                         <hi rend="italic">Chained to a dream</hi> (<orgName ref="#vocalion"
                         >Vocalion</orgName> 5510).</p>
                 <p><persName ref="#red_nichols">R. Nichols</persName> - Dans <hi rend="italic">The
@@ -483,12 +501,17 @@
                     biographiques, le plus simple serait peut-être de laisser tomber. Si, par
                     contre, vous croyez pouvoir faire quelque chose de suffisamment précis sur
                     chacun, cela change tout.</p>
-                <p>N'oubliez pas de me retenir les exemplaires de la <hi rend="italic">Disco</hi>
-                    demandés. Vous ne m'avez pas répondu à ce sujet.</p>
-                <p>Pour le premier numéro de "<orgName ref="#jazz_hot"><hi rend="italic">Jazz
-                            Hot</hi></orgName>", je pense surtout qu'il serait bon de résumer les
+                <p>N'oubliez pas de me retenir les exemplaires de la <hi rend="italic"
+                        >Disco</hi><note type="edition_electronique" place="foot" n="1"><persName
+                            ref="#h_panassie">Hugues Panassié</persName> fait référence à la <hi
+                            rend="italic">Hot Discographie 1943</hi> de <persName ref="#ch_delaunay"
+                            >Charles Delaunay</persName> parue en <date
+                            when-iso="1944">1944</date>.</note> demandés. Vous ne m'avez pas répondu
+                    à ce sujet.</p>
+                <p>Pour le premier numéro de <orgName ref="#jazz_hot"><hi rend="italic">Jazz
+                            Hot</hi></orgName>, je pense surtout qu'il serait bon de résumer les
                     nouvelles importantes depuis la guerre, c'est à dire mettre les lecteurs au
-                    courant des musiciens morts, des principaux changements survenus dans les orch.
+                    courant des musiciens morts, des principaux changements survenus dans les orchestres
                     en vue ; en somme, mettre tout le monde à la page. Ne trouvez-vous pas?</p>
                 <p>Quand à venir à <placeName ref="#paris">Paris</placeName>, le moment ne me parait
                     pas bien choisi, franchement.</p>
@@ -502,15 +525,17 @@
                             >Duke</persName> suivants (p. 79 de la <hi rend="italic">Disco</hi>)
                         devraient logiquement se placer beaucoup plus loin puisqu'on y entend
                             <persName ref="#barney_bigard">Barney</persName> et <persName
-                            ref="#johnny_hodges">Hodges</persName>. Ça doit être de 1931.</p>
+                            ref="#johnny_hodges">Hodges</persName>. Ça doit être de <date
+                            when-iso="1931">1931</date>.</p>
                     <p>Dans <hi rend="italic">Jazz à la Carte</hi> et <hi rend="italic"
                             >Demi-Tasse</hi> de <persName ref="#barney_bigard">Barney</persName> et
                         probablement les autres de la même session, c'est <persName
                             ref="#hayes_alvis">Hayes Alvis</persName>.</p>
-                    <p>Les <persName>Fats</persName> faits en 1938 en <placeName ref="#angleterre"
-                            >Angleterre</placeName> sont placés beaucoup trop tôt. Il me semble
-                        qu'ils viennent juste après les disques de gr. orch. (<hi rend="italic">In
-                            gloaming</hi>, <hi rend="italic">The Sheik</hi>, etc)</p>
+                    <p>Les <persName>Fats</persName> faits en <date when-iso="1938">1938</date> en
+                            <placeName ref="#angleterre">Angleterre</placeName> sont placés beaucoup
+                        trop tôt. Il me semble qu'ils viennent juste après les disques de grand orchestre
+                            (<hi rend="italic">In gloaming</hi>, <hi rend="italic">The Sheik</hi>,
+                        etc)</p>
                 </postscript>
             </div>
             <div type="letter">
@@ -519,7 +544,7 @@
                         n="recipient">Charles Delaunay</persName></head>
                 <opener>
                     <dateline>
-                        <date when-iso="1944-12-24">24 novembre 1944</date>
+                        <date when-iso="1944-11-24">24 novembre 1944</date>
                     </dateline>
                     <salute>Vieux <persName ref="#ch_delaunay">Charles</persName>,</salute>
                 </opener>
@@ -560,9 +585,9 @@
                         >Swing</orgName>, ou faut-il encore attendre pour publier les
                     enregistrements que les Allemands avaient empêché d'éditer? Tenez-moi au
                     courant, je vous prie. D'autre part, prévoyez-vous la parution de cette brochure
-                        <orgName ref="#swing">SWING</orgName> que vous m'aviez fait faire juste
-                    avant l'armistice de 1940 ? Si oui, sachez que j'ai toujours les textes en
-                    double ici.</p>
+                        <orgName ref="#swing">Swing</orgName> que vous m'aviez fait faire juste
+                    avant l'armistice de <date when-iso="1940">1940</date> ? Si oui, sachez que j'ai
+                    toujours les textes en double ici.</p>
                 <p>J'attends de vos nouvelles par un prochain courrier.</p>
                 <closer>
                     <salute>Mes meilleures amitiés</salute>
