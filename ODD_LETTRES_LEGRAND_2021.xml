@@ -3,19 +3,36 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="short">oddbyexample</title>
-            <title>ODD by Example customization</title>
+            <title type="short">Schéma ODD et guide d'encodage de l'édition numérique lettres d'Hugues Panassié à Charles Delaunay</title>
+            <author>
+               <forename>Anne</forename>
+               <surname>Legrand</surname>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p>Unpublished first draft </p>
+            <publisher>Master 2 Technologies numériques appliquées à l'histoire, École nationale des
+               chartes</publisher>
+            <date when="2021-06">Juin 2021</date>
+            <availability>
+               <p>Ce guide et l'encodage sont réalisés pour une évaluation du cours d'XML-TEI du M2
+                  TNAH de l'École nationale des chartes.</p>
+            </availability>
          </publicationStmt>
          <sourceDesc>
-            <p>Derived from <ref target="https://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml">base odd</ref> after an analysis of 1 files in file:/home/formation1/annelegrand/XLMPinche/Devoir2021/Lettres_TEI_Legrand/</p>
+            <p>Derived from <ref
+                  target="https://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml">base
+                  odd</ref> after an analysis of 1 files in
+               file:/home/formation1/annelegrand/XLMPinche/Devoir2021/Lettres_TEI_Legrand/</p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
    <text>
       <body>
+         <div1> 
+            <head>Guide d'encodage</head>
+         </div1>
+         <div1>
+            <head>Spécifications de l'encodage</head>
          <schemaSpec ident="oddbyexample" start="TEI ">
             <moduleRef key="tei"/>
             <!--Checking module textcrit-->
@@ -48,7 +65,7 @@
             <classRef key="att.datable.iso"/>
             <classRef key="model.persNamePart"/>
             <moduleRef key="namesdates"
-                       include="orgName persName surname forename addName placeName country settlement district listOrg listPerson listPlace listRelation location occupation org person personGrp place relation"/>
+               include="orgName persName surname forename addName placeName country settlement district listOrg listPerson listPlace listRelation location occupation org person personGrp place relation"/>
             <elementSpec ident="orgName" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
@@ -413,7 +430,7 @@
             </classSpec>
             <!--Checking module core-->
             <moduleRef key="core"
-                       include="p hi num date label head note pb author respStmt resp title"/>
+               include="p hi num date label head note pb author respStmt resp title"/>
             <elementSpec ident="p" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
@@ -512,7 +529,7 @@
             <!--Checking module figures-->
             <!--Checking module header-->
             <moduleRef key="header"
-                       include="teiHeader fileDesc titleStmt publicationStmt authority idno availability licence sourceDesc encodingDesc projectDesc profileDesc correspDesc correspAction"/>
+               include="teiHeader fileDesc titleStmt publicationStmt authority idno availability licence sourceDesc encodingDesc projectDesc profileDesc correspDesc correspAction"/>
             <elementSpec ident="teiHeader" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
@@ -639,7 +656,7 @@
             </classSpec>
             <!--Checking module textstructure-->
             <moduleRef key="textstructure"
-                       include="TEI text body div dateline opener closer salute signed postscript"/>
+               include="TEI text body div dateline opener closer salute signed postscript"/>
             <elementSpec ident="TEI" mode="change">
                <attList>
                   <attDef ident="version" mode="delete"/>
@@ -711,6 +728,7 @@
                </attList>
             </elementSpec>
          </schemaSpec>
+        </div1>
       </body>
    </text>
 </TEI>
