@@ -43,11 +43,21 @@
             <div2>
                <head>Le projet d'édition numérique et éventuelles exploitations</head>
                <div3>
-                  <head>Contextualisation du projet</head>
+                  <head>Contextualisation du projet d'édition numérique</head>
                   <p>Cette édition numérique a été réalisée dans le cadre du devoir d’XML-TEI du
                      Master &#171; Technologies numériques appliquées à l’histoire &#187; de l’École
-                     nationale des chartes. Le corpus est composé de trois lettres extraites de la correspondance entre Hugues
-                     Panassié et Charles Delaunay conservée par André Hodeir à son domicile.</p>
+                     nationale des chartes. Les trois lettres ont été extraites de la correspondance
+                     entre Hugues Panassié et Charles Delaunay conservée par André Hodeir à son
+                     domicile. Cette correspondance comprend 85 lettres écrites entre 1940 et 1947.
+                     Elle n'a jamais été éditée.</p>
+                  <p>Le devoir porte sur trois lettres envoyées entre 1940 et 1944 pendant la
+                     période de l'Occupation de la France durant la Seconde Guerre mondiale. En
+                     novembre 1940, Charles Delaunay revient de chez ses parents résidant en zone
+                     libre, à Mougins et rejoint le siège de l'association du Hot Club de France à
+                     Paris. Il envoie les premières nouvelles de l'association à son président
+                     Hugues Panassié demeurant également en zone libre, à Montauban. Dans la
+                     première lettre choisie pour ce projet d'édition numérique, Hugues Panassié
+                     répond à ce courrier envoyé par Charles Delaunay.</p>
                </div3>
             </div2>
          </div1>
