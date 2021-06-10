@@ -41,7 +41,7 @@
                contient les métadonnées décrivant la lettre puis, l'élément <tag>text</tag>
                contenant une représentation d'une lettre.</p>
             <div2>
-               <head>Le projet d'édition numérique et éventuelles exploitations</head>
+               <head>Le projet d'édition numérique et ses exploitations possibles et futures</head>
                <div3>
                   <head>Contextualisation du projet d'édition numérique</head>
                   <p>Cette édition numérique a été réalisée dans le cadre du devoir d’XML-TEI du
@@ -51,13 +51,26 @@
                      domicile. Cette correspondance comprend 85 lettres écrites entre 1940 et 1947.
                      Elle n'a jamais été éditée.</p>
                   <p>Le devoir porte sur trois lettres envoyées entre 1940 et 1944 pendant la
-                     période de l'Occupation de la France durant la Seconde Guerre mondiale. En
-                     novembre 1940, Charles Delaunay revient de chez ses parents résidant en zone
-                     libre, à Mougins et rejoint le siège de l'association du Hot Club de France à
-                     Paris. Il envoie les premières nouvelles de l'association à son président
-                     Hugues Panassié demeurant également en zone libre, à Montauban. Dans la
-                     première lettre choisie pour ce projet d'édition numérique, Hugues Panassié
-                     répond à ce courrier envoyé par Charles Delaunay.</p>
+                     période de l'Occupation de la France par l'Allemagne nazie, durant la Seconde
+                     Guerre mondiale. En novembre 1940, Charles Delaunay revient de chez ses parents
+                     résidant en zone libre à Mougins, et rejoint le siège de l'association du Hot
+                     Club de France à Paris. Il envoie les premières nouvelles de l'association à
+                     son président Hugues Panassié, demeurant également en zone libre à Montauban.
+                     Dans la première lettre choisie pour ce projet d'édition numérique, Hugues
+                     Panassié répond à ce courrier envoyé par Charles Delaunay. Alors que
+                     l'exportation des disques des États-Unis est interrompue, Charles Delaunay
+                     contiune néanmoins d'enrichir sa <hi rend="italic">Hot Discographie</hi> pour
+                     en publier une troisième édition pendant l'Occupation. Hugues Panassié relie et
+                     corrige les épreuves comme le révèle la lettre de 1943. Le choix de la dernière
+                     lettre s'est porté sur une lettre écrite deux mois après la Libération de Paris
+                     dans laquelle Hugues Panassié tente d'obtenir des nouvelles.</p>
+               </div3>
+               <div3>
+                  <head>Les exploitations possibles du projet d'édition numérique</head>
+                  <p>Cette édition numérique s'adresse aussi bien à un chercheur ou un étudiant,
+                     qu'un spécialiste de jazz ou une personne néophyte souhaitant enrichir ses
+                     connaissances par le biais de documents originaux.Afin de rendre la lecture
+                     agréable, nous sommes intervenus sur le texte lui-même et sa présentation.</p>
                </div3>
             </div2>
          </div1>
