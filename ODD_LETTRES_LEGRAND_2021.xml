@@ -47,7 +47,7 @@
                   <p>Cette édition numérique a été réalisée dans le cadre du devoir d’XML-TEI du
                      Master &#171; Technologies numériques appliquées à l’histoire &#187; de l’École
                      nationale des chartes. Les trois lettres ont été extraites de la correspondance
-                     entre Hugues Panassié et Charles Delaunay conservée par André Hodeir à son
+                     entre Hugues Panassié et Charles Delaunay, conservée par André Hodeir à son
                      domicile. Cette correspondance comprend 85 lettres écrites entre 1940 et 1947.
                      Elle n'a jamais été éditée.</p>
                   <p>Le devoir porte sur trois lettres envoyées entre 1940 et 1944 pendant la
@@ -55,27 +55,152 @@
                      Guerre mondiale. En novembre 1940, Charles Delaunay revient de chez ses parents
                      résidant en zone libre à Mougins, et rejoint le siège de l'association du Hot
                      Club de France à Paris. Il envoie les premières nouvelles de l'association à
-                     son président Hugues Panassié, demeurant également en zone libre à Montauban.
-                     Dans la première lettre choisie pour ce projet d'édition numérique, Hugues
-                     Panassié répond à ce courrier envoyé par Charles Delaunay. Alors que
-                     l'exportation des disques des États-Unis est interrompue, Charles Delaunay
-                     contiune néanmoins d'enrichir sa <hi rend="italic">Hot Discographie</hi> pour
-                     en publier une troisième édition pendant l'Occupation. Hugues Panassié relie et
-                     corrige les épreuves comme le révèle la lettre de 1943. Le choix de la dernière
-                     lettre s'est porté sur une lettre écrite deux mois après la Libération de Paris
-                     dans laquelle Hugues Panassié tente d'obtenir des nouvelles.</p>
+                     son président Hugues Panassié, demeurant aussi en zone libre à Montauban. Dans
+                     la première lettre choisie pour ce projet d'édition numérique, Hugues Panassié
+                     répond à ce courrier envoyé par Charles Delaunay. Alors que l'exportation des
+                     disques des États-Unis est interrompue, Charles Delaunay contiune néanmoins
+                     d'enrichir sa <hi rend="italic">Hot Discographie</hi> pour en publier une
+                     troisième édition pendant l'Occupation. Hugues Panassié relie et corrige les
+                     épreuves comme le révèle la lettre de 1943. Le choix de la dernière lettre
+                     s'est porté sur une lettre écrite deux mois après la Libération de Paris dans
+                     laquelle Hugues Panassié tente d'obtenir des nouvelles du siège de
+                     l'association.</p>
                </div3>
                <div3>
                   <head>Les exploitations possibles du projet d'édition numérique</head>
                   <p>Cette édition numérique s'adresse aussi bien à un chercheur ou un étudiant,
-                     qu'un spécialiste de jazz ou une personne néophyte souhaitant enrichir ses
-                     connaissances par le biais de documents originaux.Afin de rendre la lecture
-                     agréable, nous sommes intervenus sur le texte lui-même et sa présentation.</p>
+                     qu'à un spécialiste de jazz ou une personne néophyte souhaitant enrichir ses
+                     connaissances par le biais de documents originaux.</p>
+                  <p>La mise en ligne d'une numérisation de correspondance sans travail d'édition
+                     électronique, permet une recherche plein texte avec une bonne océrisation mais
+                     l'édition numérique offre d'autres moyens de navigation et d'accès à
+                     l'information. En effet, dans ce présent travail d'édition numérique, l'accent
+                     a été mis sur la donnée plutôt que sur le rendu fidèle de ces trois
+                     lettres.</p>
+                  <p>Afin de rendre la lecture agréable, nous sommes intervenus sur le texte
+                     lui-même et sa présentation. Par exemple, pour une harmonisation de la
+                     ponctuation, nous avons en effet inséré des majuscules aux titres de revues ou
+                     de morceaux qui ont été mis en italiques, ou nous avons ajouté des espaces
+                     quand il en manquait. Le référencement occupe donc une place importante dans
+                     cette édition. Il a été centré sur les personnages, les lieux et les structures
+                     permettant l'existence d'une activité jazzistique sous l'Occupation. L'encodage
+                     des dates a été réalisé et permettra dans une édition future plus aboutie de
+                     relier les personnages et les lieux afin d'analyser leur évolution pendant
+                     cette période. On pourra également songer à l'encodage des références
+                     discographiques dans le but de donner un aperçu de la connaissance
+                     discographique du jazz de cette époque. Ce référecement pourra s'ouvrir sur une
+                     interopérabilité des données avec celles de wikidata.</p>
+               </div3>
+            </div2>
+            <div2>
+               <head>Le <tag>teiHeader</tag></head>
+               <p>Le <tag>teiHeader</tag> contient des métadonnées décrivant le texte. Il se compose
+                  de trois sous-éléments : <specList>
+                     <specDesc key="fileDesc"/>
+                     <specDesc key="encodingDesc"/>
+                     <specDesc key="profileDesc"/>
+                  </specList>
+               </p>
+               <div3>
+                  <head>Le <tag>fileDesc</tag></head>
+                  <p>Ce sous-élément est la description bibliographique de l'édition numérique. Elle
+                     est composée de quatre sections : <specList>
+                        <specDesc key="titleStmt"/>
+                        <specDesc key="publicationStmt"/>
+                        <specDesc key="sourceDesc"/>
+                     </specList>
+                  </p>
+                  <div4>
+                     <head>Le <gi>titleStmt</gi></head>
+                     <p>Le <tag>titleStmt</tag> est la déclaration du titre au sein de l'élément
+                           <tag>title</tag>, de l'auteur dans l'élément <tag>author</tag> et une
+                        mention de responsabilité de l'encodage indiquée dans le
+                        <tag>respStmt</tag>.</p>
+                     <p><specList>
+                           <specDesc key="title"/>
+                           <specDesc key="author"/>
+                           <specDesc key="respStmt"/>
+                        </specList>
+                     </p>
+                  </div4>
+                  <div4>
+                     <head>Le <gi>publicationStmt</gi></head>
+                     <p>Cette section permet de déclarer la maison d'édition, le lieu et l'année.
+                        Mais cette correspondance n'a pas été publiée donc, les notions d'éditeur ou
+                        de lieu de publication ne s'y appliquent pas. Nous avons donc indiquer dans
+                        l'élement <gi>authority</gi> le nom de Madame Hodeir qui possède cette
+                        correspondance et nous a donné son authorisation de travailler sur les trois
+                        lettres pour ce devoir.</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <publicationStmt>
+                           <authority>Michèle Hodeir</authority>
+                           <date from-iso="1940-11-12" to-iso="1944-11-24"/>
+                           <availability status="restricted">
+                              <licence
+                                 target="http://creativecommons.org/licenses/by-nc-sa/4.0/ https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">
+                                 <p>Attribution-NonCommercial-ShareAlike 4.0 International (CC
+                                    BY-NC-SA 4.0) </p>
+                              </licence>
+                           </availability>
+                        </publicationStmt>
+                     </egXML>
+                  </div4>
+                  <div4>
+                     <head>La <tag>sourceDesc</tag></head>
+                     <p>La <gi>sourceDesc</gi> permet de décrire le document source. Avec l'élement
+                           <gi>msDesc</gi>, nous avons indiqué le lieu de conservation de ces
+                        lettres tapuscrites ainsi que la cote dans la subdivision : <specList>
+                           <specDesc key="msIdentifier"/>
+                        </specList>.</p>
+                     <div5>
+                        <head>Le <tag>msIdentifier</tag> et sa cote dans l'élément
+                           <gi>idno</gi></head>
+                        <p>Le <gi>msIdentifier</gi> regroupe les informations relatives à
+                           l'identification du manuscrit ou tapuscrit. Comme cette correspondance
+                           est gardée chez un particulier et non dans une institution, nous avons
+                           indiqué un lieu de conservation avec les noms de la ville et du pays de
+                           conservation. Les documents ne sont pas cotés. Pour cette édition
+                           numérique, nous avons travaillé à partir des photographies des lettres.
+                           La référence du fichier numérique nous a servit de cote référencée dans
+                           l'élément <gi>idno</gi>.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <msIdentifier>
+                              <country>France</country>
+                              <settlement>Versailles</settlement>
+                              <idno type="DOI">1685</idno>
+                              <idno type="DOI">1674</idno>
+                              <idno type="DOI">1779</idno>
+                           </msIdentifier>
+                        </egXML>
+                     </div5>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>L'<tag>encodingDesc</tag></head>
+                  <p>L'<gi>encodingDesc</gi> est un sous-élément du <tag>teiHeader</tag> dans lequel
+                     est décrit l'encodage du fichier XML et sa relation avec sa source. Ce guide
+                     de l'encodage poursuivant les mêmes objectifs, un bref rappel de
+                     contextualisation a été rédigé dans l'élément <gi>projectDesc</gi>.</p>
+                  <p><specList>
+                        <specDesc key="projectDesc"/>
+                     </specList></p>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <encodingDesc>
+                        <projectDesc>
+                           <p>Ce projet d'encodage de la correspondance d'Hugues Panassié à Charles Delaunay a
+                              été réalisé dans le cadre du cours d'XML-TEI dispensé en master 2 Technologies
+                              numériques appliquées à l'histoire de l'Ecole nationale des chartes (projet
+                              2020-2021). Ces lettres font partie de la collection d'André Hodeir et sont
+                              conservées à son domicile.</p>
+                        </projectDesc>
+                     </encodingDesc>
+                  </egXML>
                </div3>
             </div2>
          </div1>
          <div1>
             <head>Spécifications de l'encodage</head>
+            <!-- Un commentaire dans le code indique les zones où des règles ont été modifiées ou créées. -->
             <schemaSpec ident="oddbyexample" start="TEI ">
                <moduleRef key="tei"/>
                <!--Checking module textcrit-->
@@ -280,7 +405,9 @@
                   </attList>
                </elementSpec>
                <elementSpec ident="person" mode="change">
+                  <!-- Ajout l'attribut @sex et le rend obligatoire dans pour chaque élément <person> -->
                   <attList>
+                     <attDef ident="sex" mode="change" usage="req"/>
                      <attDef ident="role" mode="delete"/>
                      <attDef ident="age" mode="delete"/>
                      <attDef ident="facs" mode="delete"/>
@@ -714,9 +841,13 @@
                   </attList>
                </elementSpec>
                <elementSpec ident="body" mode="change">
-                  <attList>
-                     <attDef ident="facs" mode="delete"/>
-                  </attList>
+                  <content>
+                     <sequence preserveOrder="true">
+                        <elementRef key="head" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="div" minOccurs="1" maxOccurs="unbounded"/>
+                        <!-- Un seul <head> précède le <body> qui sera suivi d'une succession de <div> -->
+                     </sequence>
+                  </content>
                </elementSpec>
                <elementSpec ident="div" mode="change">
                   <attList>
