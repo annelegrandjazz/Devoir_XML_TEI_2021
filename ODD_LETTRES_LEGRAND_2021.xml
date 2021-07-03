@@ -88,8 +88,8 @@
                      relier les personnages et les lieux afin d'analyser leur évolution pendant
                      cette période. On pourra également songer à l'encodage des références
                      discographiques dans le but de donner un aperçu de la connaissance
-                     discographique du jazz de cette époque. Ce référecement pourra s'ouvrir sur une
-                     interopérabilité des données avec celles de wikidata.</p>
+                     discographique du jazz de cette époque. Ce référencement pourra s'ouvrir sur
+                     une interopérabilité des données avec celles de wikidata.</p>
                </div3>
             </div2>
             <div2>
@@ -129,7 +129,7 @@
                         Mais cette correspondance n'a pas été publiée donc, les notions d'éditeur ou
                         de lieu de publication ne s'y appliquent pas. Nous avons donc indiquer dans
                         l'élement <gi>authority</gi> le nom de Madame Hodeir qui possède cette
-                        correspondance et nous a donné son authorisation de travailler sur les trois
+                        correspondance et nous a donné son autorisation de travailler sur les trois
                         lettres pour ce devoir.</p>
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <publicationStmt>
@@ -162,7 +162,9 @@
                            conservation. Les documents ne sont pas cotés. Pour cette édition
                            numérique, nous avons travaillé à partir des photographies des lettres.
                            La référence du fichier numérique nous a servit de cote référencée dans
-                           l'élément <gi>idno</gi>.</p>
+                           l'élément <gi>idno</gi> avec la valeur <val>DOI</val> pour l'attribut
+                              <att>type</att>. Cette valeur (Digital Object Identifier) est utilisée
+                           pour les documents électroniques.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                            <msIdentifier>
                               <country>France</country>
@@ -178,23 +180,313 @@
                <div3>
                   <head>L'<tag>encodingDesc</tag></head>
                   <p>L'<gi>encodingDesc</gi> est un sous-élément du <tag>teiHeader</tag> dans lequel
-                     est décrit l'encodage du fichier XML et sa relation avec sa source. Ce guide
-                     de l'encodage poursuivant les mêmes objectifs, un bref rappel de
-                     contextualisation a été rédigé dans l'élément <gi>projectDesc</gi>.</p>
+                     est décrit l'encodage du fichier XML et sa relation avec sa source. Ce guide de
+                     l'encodage poursuivant les mêmes objectifs, un bref rappel de contextualisation
+                     a été rédigé dans l'élément <gi>projectDesc</gi>.</p>
                   <p><specList>
                         <specDesc key="projectDesc"/>
                      </specList></p>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <encodingDesc>
                         <projectDesc>
-                           <p>Ce projet d'encodage de la correspondance d'Hugues Panassié à Charles Delaunay a
-                              été réalisé dans le cadre du cours d'XML-TEI dispensé en master 2 Technologies
-                              numériques appliquées à l'histoire de l'Ecole nationale des chartes (projet
-                              2020-2021). Ces lettres font partie de la collection d'André Hodeir et sont
-                              conservées à son domicile.</p>
+                           <p>Ce projet d'encodage de la correspondance d'Hugues Panassié à Charles
+                              Delaunay a été réalisé dans le cadre du cours d'XML-TEI dispensé en
+                              master 2 Technologies numériques appliquées à l'histoire de l'Ecole
+                              nationale des chartes (projet 2020-2021). Ces lettres font partie de
+                              la collection d'André Hodeir et sont conservées à son domicile.</p>
                         </projectDesc>
                      </encodingDesc>
                   </egXML>
+               </div3>
+               <div3>
+                  <head>Le <tag>profileDesc</tag></head>
+                  <p>Le <gi>profileDesc</gi> contient une description détaillée des aspects non
+                     bibliographiques. Il se compose de trois subdivisions : <specList>
+                        <specDesc key="correspDesc"/>
+                        <specDesc key="settingDesc"/>
+                        <specDesc key="particDesc"/>
+                     </specList></p>
+                  <div4>
+                     <head>Le <tag>correspDesc</tag></head>
+                     <p>Dans cette subdivion, nous pouvons décrire les éléments spécifiques à la
+                        correspondance comme le nom et la ville de l'expéditeur et du destinataire
+                        des lettres, la langue utilisée ainsi qu'un rappel des dates des lettres
+                        encodées correspondant à leur cote avec la balise <gi>correspAction</gi>
+                        déclinant <gi>lang</gi>, <gi>persName</gi>, <gi>date</gi> et
+                        <gi>idno</gi>.</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <correspDesc>
+                           <correspAction type="sent">
+                              <lang xml:lang="fre">Français</lang>
+                              <persName>
+                                 <forename>Hugues</forename>
+                                 <surname>Panassié</surname>
+                              </persName>
+                              <settlement>Montauban</settlement>
+                              <date when-iso="1940-11-12">12 novembre 1940</date>
+                              <idno type="DOI">1685</idno>
+                              <date when-iso="1943-09-16">16 septembre 1943</date>
+                              <idno type="DOI">1674</idno>
+                              <date when-iso="1944-11-24">24 novembre 1944</date>
+                              <idno type="DOI">1779</idno>
+                           </correspAction>
+                           <correspAction type="received">
+                              <persName>
+                                 <forename>Charles</forename>
+                                 <surname>Delaunay</surname>
+                              </persName>
+                              <settlement>Paris</settlement>
+                           </correspAction>
+                        </correspDesc>
+                     </egXML>
+                  </div4>
+                  <div4>
+                     <head>Le <tag>settingDesc</tag></head>
+                     <p>Le <gi>settingDesc</gi> contient un index des noms de lieux, répartis en
+                        deux catégories de <tag>listPlace</tag> : lieux français et étrangers avec
+                        les valeurs <val>France</val> et <val>Etranger</val> pour l'attribut
+                           <att>type</att>. Le <tag>listPlace</tag> se décline avec la balise
+                           <gi>place</gi> qui comprend deux attributs : <att>xml:id</att> et
+                           <att>type</att>. Les valeurs de l'attribut <att>xml:id</att> permettent
+                        de référencer les différents lieux et de les pointer vers l'index lorsqu'ils
+                        sont cités dans le <tag>text</tag>. Pour l'attribut <att>type</att>, on a
+                        retenu les valeurs <val>country</val>, <val>city</val> pour une grande
+                        ville, <val>town</val> pour les autres agglomérations urbaines et
+                           <val>building</val>. Cette dernière valeur a été retenue pour indiquer
+                        une adresse précise. Enfin, chaque élément <gi>place</gi> est composé des
+                        balises <gi>placeName</gi>, qui à son tour décline les balises
+                           <gi>country</gi>, <gi>settlement</gi> qui comprend l'attribut
+                           <att>type</att> avec les valeurs <val>city</val> et <val>town</val>. Une
+                        balise <gi>note</gi> peut donner des informations supplémentaires sur un
+                        lieu.</p>
+                     <p>Dans le cas d'une adresse précise, le <gi>placeName</gi> est suivi d'une
+                        balise <gi>location</gi> suivi de <gi>country</gi>, <gi>settlement</gi> et
+                        de <gi>district</gi> avec les attributs <att>type</att> pour la valeur
+                           <val>arrondissement</val> et <att>n</att> comprenant le chiffre de
+                        l'arrondissement comme valeur <val>9</val>. L'adresse est ensuite indiquée
+                        dans un nouveau <gi>placeName</gi> de valeur <val>rue</val> pour l'attribut
+                           <att>type</att> avec une balise <gi>num</gi> pour le numéro de la rue
+                        :</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <place xml:id="chez_nourry" type="building">
+                           <placeName>Chez Madame Nourry</placeName>
+                           <location>
+                              <country>France</country>
+                              <settlement type="town">Paris</settlement>
+                              <district type="arrondissement" n="9">9ème</district>
+                              <placeName type="rue"><num>30</num>rue du conservatoire</placeName>
+                           </location>
+                        </place>
+                     </egXML>
+                  </div4>
+                  <div4>
+                     <head>Le <tag>particDesc</tag></head>
+                     <p>Le <gi>particDesc</gi> contient un index des noms de personnes et un index
+                        des noms d'organisme qui ont permis une activité jazzistique sous
+                        l'Occupation. Nous nous intéressons d'abord à l'index des noms de personnes.
+                        Il a été divisé en trois listes introduites par la balise
+                           <gi>listPerson</gi> comprenant un attribut <att>type</att> avec les
+                        valeurs désignants les trois listes : <val>famille_Delaunay</val>,
+                           <val>famille_nourry</val>, <val>autres</val>. Les familles Delaunay et
+                        Nourry étant évoquées dans la correspondance, il nous est apparu intéressant
+                        de pouvoir présenter les relations des personnes dans l'index. Chaque liste
+                        contient l'élément <gi>person</gi> pour chaque personne indexée. Cet élément
+                        comprend les attributs <att>sex</att> et <att>xml:id</att> pour les
+                        identifier. La valeur de <att>xml:id</att> est un identifiant permettant de
+                        référencer les différents noms de personne et de les pointer vers l'index
+                        lorsqu'ils sont cités dans le <tag>text</tag>. Ensuite, dans l'élement
+                           <gi>persName</gi>, nous déclinons les balises <gi>forename</gi>,
+                           <gi>surname</gi>. Une balise <gi>occupation</gi> clos l'élément
+                           <gi>person</gi>.</p>
+                     <p>Les liens dans les familles Delaunay et Nourry sont précisés dans l'élément
+                           <gi>listRelation</gi> suivi de <gi>relation</gi>. Pour les parents,
+                           <gi>relation</gi> comprend les attributs <att>name</att>,
+                           <att>mutual</att> et <att>type</att> : <list>
+                           <item>La valeur <val>married_couple</val> pour l'attibut
+                              <att>name</att>.</item>
+                           <item>La valeur des noms de personnes mariés avec leur <att>xml:id</att>
+                              pour l'attibut <att>mutual</att>.</item>
+                           <item>La valeur <val>first_marriage</val> pour l'attibut
+                              <att>type</att>.</item>
+                        </list> Pour les enfants, <gi>relation</gi> comprend les attributs
+                           <att>name</att>, <att>active</att> et <att>passive</att> : <list>
+                           <item>La valeur <val>child</val> pour l'attibut <att>name</att>.</item>
+                           <item>La valeur du nom de l'enfant avec le <att>xml:id</att> pour
+                              l'attibut <att>active</att>.</item>
+                           <item>La valeur des noms des parents avec leur <att>xml:id</att> pour
+                              l'attibut <att>passive</att>.</item>
+                        </list>
+                     </p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <listPerson type="famille_Delaunay">
+                           <person sex="male" xml:id="ch_delaunay">
+                              <persName><forename>Charles</forename><surname>Delaunay</surname></persName>
+                              <occupation>secrétaire du Hot Club de France</occupation>
+                           </person>
+                           <person sex="male" xml:id="r_delaunay">
+                              <persName><forename>Robert</forename><surname>Delaunay</surname></persName>
+                              <occupation>peintre</occupation>
+                           </person>
+                           <person sex="female" xml:id="s_delaunay">
+                              <persName><forename>Sonia</forename><surname>Delaunay</surname></persName>
+                              <occupation>peintre</occupation>
+                           </person>
+                           <listRelation>
+                              <relation name="married_couple" mutual="#s_delaunay #r_delaunay"
+                                 type="first_marriage"/>
+                              <relation name="child" active="#ch_delaunay"
+                                 passive="#s_delaunay #r_delaunay"/>
+                           </listRelation>
+                        </listPerson>
+                     </egXML>
+
+
+                     <p>La <gi>listPerson</gi> comprenant l'attribut <att>type</att> de valeur
+                           <val>autres</val> contient surtout des noms de musiciens de jazz. Ceux-ci
+                        sont souvent dénommés par un surnom que nous indiquons dans la balises
+                           <gi>addName</gi> situé dans le <gi>persName</gi> après le
+                           <gi>surname</gi> : <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <person sex="male" xml:id="duke">
+                              <persName><forename>Edward
+                                    Kennedy</forename><surname>Ellington</surname><addName>Duke</addName></persName>
+                              <occupation>pianiste, chef d'orchestre et compositeur</occupation>
+                           </person>
+                        </egXML>
+                     </p>
+                     <p>Nous avons également signalé des formations pouvant compter 5 à 15 musiciens
+                        dans cette <tag>listPerson</tag> avec l'élément <gi>personGrp</gi>. Il
+                        comprend trois attributs : <list>
+                           <item>L'attribut <att>xml:id</att> donne comme valeur un identifiant
+                              permettant de référencer le groupe et de le pointer vers l'index
+                              lorsqu'il est cité dans le <tag>text</tag>.</item>
+                           <item>L'attibut <att>sex</att> indique si l'orchestre est composé d'homme
+                              ou de femme avec la valeur <val>male</val> ou
+                              <val>female</val>.</item>
+                           <item>L'attibut <att>size</att> précise le nombre de musicien avec un
+                              chiffre pour valeur.</item>
+                           <item>L'attibut <att>role</att> comprend la valeur
+                              <val>orchestre</val>.</item>
+                        </list>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <personGrp xml:id="quintette" sex="male" size="5" role="orchestre">
+                              <persName>Quintette du Hot Club de France</persName>
+                           </personGrp>
+                        </egXML>
+                     </p>
+                     <p>L'index des noms d'organisme est indiqué par l'élement <gi>listOrg</gi>. Son
+                        attribut <att>type</att> divise cette liste en quatre catégories avec une
+                        valeur <val>phono_company</val> pour les sociétés regroupant plusieurs
+                        marques de disques, une valeur <val>record_company</val> pour une marque de
+                        disques, une valeur <val>magazine</val> pour les magazines de jazz et une
+                        valeur <val>radio</val>. Cet élément <gi>listOrg</gi> est suivi par la
+                        balise <gi>org</gi> avec un attribut <att>xml:id</att> d'une valeur
+                        représentant un identifiant qui permet de référencer les différents noms des
+                        organismes et de les pointer vers l'index lorsqu'ils sont cités dans le
+                           <tag>text</tag>. La balise <gi>orgName</gi> donne le nom de ces
+                        organismes. Cette balise peut avoir un attribut <att>notAfter</att> de
+                        valeur <val>1945</val> afin d'indiquer le nom d'un organisme à un moment
+                        donné. Une balise <gi>addName</gi> peut être insérée dans <gi>orgName</gi>
+                        afin de préciser le diminutif sous lequel l'organisme est le plus connu. Les
+                        noms de magazine sont mis en italiques. <egXML
+                           xmlns="http://www.tei-c.org/ns/Examples">
+                           <listOrg type="magazine">
+                              <org xml:id="jazz_information">
+                                 <orgName><hi rend="italic">Jazz Information</hi></orgName>
+                              </org>
+                              <org xml:id="jazz_hot">
+                                 <orgName><hi rend="italic">Jazz Hot</hi></orgName>
+                              </org>
+                           </listOrg>
+                        </egXML>
+                     </p>
+                  </div4>
+               </div3>
+            </div2>
+            <div2>
+               <head>Le <tag>text</tag> et le <tag>body</tag></head>
+               <p>L'élément <gi>text</gi> a pour enfant l'élément <gi>body</gi> comprenant un
+                  attribut <att>xml:lang</att> de valeur <val>fr</val> indiquant que la lettre est
+                  en français.</p>
+               <div3>
+                  <head>Le <tag>div</tag></head>
+                  <p> L'élément <gi>div</gi> avec l'attribut <att>type</att> de valeur
+                        <val>letter</val> englobe individuellement chaque lettre. Puis, il est suivi
+                     des éléments suivants : <specList>
+                        <specDesc key="pb"/>
+                        <specDesc key="head"/>
+                        <specDesc key="opener"/>
+                        <specDesc key="p"/>
+                        <specDesc key="closer"/>
+                        <specDesc key="postscript"/>
+                     </specList>
+                  </p>
+                  <div4>
+                     <head>L'élément <tag>pb</tag></head>
+                     <p>L'élément <gi>pb</gi> avec l'attibut <att>facs</att> donne comme valeur le
+                        nom du fichier numérique : <val>IMG_1685.JPG</val>. Les trois lettres du
+                        devoir tiennent sur une page mais ceci aurait permis d'indiquer le numéro du
+                        fichier numérique pour la page suivante d'une lettre si celle_ci comprenait
+                        plusieurs pages.</p>
+                  </div4>
+                  <div4>
+                     <head>Le <tag>head</tag></head>
+                     <p>Un élément <gi>head</gi> renseigne l'expéditeur et le destinateur, avec les
+                        éléments <gi>persName</gi> d'attribut <att>n</att> et de valeur
+                           <val>sender</val> et <val>recipient</val>. L'élément
+                        <gi>head</gi>comporte aussi des attributs d'identification <att>ref</att>
+                        pour que le nom de la personne soit référencé dans l'index.</p>
+                  </div4>
+                  <div4>
+                     <head>L' <tag>opener</tag></head>
+                     <p>L'<gi>opener</gi> est l'en-tête d'une lettre avec les balises
+                           <gi>dateline</gi> et <gi>salute</gi>.</p>
+                     <div5>
+                        <head>La <tag>dateline</tag></head>
+                        <p>Cette <gi>dateline</gi> est suivie par la balise <gi>date</gi> qui
+                           possède un attribut <att>when-iso</att>, c'est-à-dire qu'il est structuré
+                           pour les normes ISO en donnant d'abord l'année, le mois et le jour:
+                              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                              <dateline>
+                                 <date when-iso="1940-11-12">12 novembre 1940</date>
+                              </dateline>
+                           </egXML>
+                        </p>
+                     </div5>
+                     <div5>
+                        <head>Le <tag>salute</tag></head>
+                        <p>Le <gi>salute</gi> présente la formule d'introduction de la lettre. On
+                           peut ainsi référencer le destinataire avec une balise <gi>persName</gi>
+                           et son attribut d'indentification <att>ref</att>.</p>
+                     </div5>
+                  </div4>
+                  <div4>
+                     <head>L'élément <tag>p</tag></head>
+                     <p>Chaque paragraphe de la lettre vont ensuite être indiqué par cet élément <gi>p</gi>.</p>
+                  </div4>
+                  <div4>
+                     <head>Le <tag>closer</tag></head>
+                     <p>Le <gi>closer</gi> permet d'indiquer les salutations de fin de lettre avec les balises <gi>salute</gi> et <gi>signed</gi>.
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <closer>
+                              <salute>Bien à vous</salute>
+                              <signed>Hugues</signed>
+                           </closer>
+                        </egXML>                       
+                     </p>
+                  </div4>
+                  <div4>
+                     <head>Le <tag>postscript</tag></head>
+                     <p>Le post-scriptum ou l'élément <gi>postscript</gi> est suivi de deux balises : le <gi>label</gi> et le <gi>p</gi>.
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <postscript>
+                              <label>P.S.</label>
+                              <p>Pour le fric, je crois que <orgName ref="#pathe_marconi"
+                                 >Pathé-Marconi</orgName> a le droit de m'envoyer au moins deux mille
+                                 balles.</p>
+                           </postscript>
+                        </egXML>                     
+                     </p>
+                  </div4>
                </div3>
             </div2>
          </div1>
@@ -405,7 +697,7 @@
                   </attList>
                </elementSpec>
                <elementSpec ident="person" mode="change">
-                  <!-- Ajout l'attribut @sex et le rend obligatoire dans pour chaque élément <person> -->
+                  <!-- Ajout l'attribut @sex et le rend obligatoire dans chaque élément <person> -->
                   <attList>
                      <attDef ident="sex" mode="change" usage="req"/>
                      <attDef ident="role" mode="delete"/>
@@ -667,7 +959,14 @@
                      <attDef ident="to-iso" mode="delete"/>
                   </attList>
                </elementSpec>
+               <!-- Création d'une contrainte d'enchaînement des éléments <resp> et <persName> au sein de la balise <respStmt> -->
                <elementSpec ident="respStmt" mode="change">
+                  <content>
+                  <sequence preserveOrder="true">
+                     <elementRef key="resp"/>
+                     <elementRef key="persName"/>
+                  </sequence>
+                  </content>
                   <attList>
                      <attDef ident="facs" mode="delete"/>
                      <attDef ident="ref" mode="delete"/>
@@ -841,13 +1140,9 @@
                   </attList>
                </elementSpec>
                <elementSpec ident="body" mode="change">
-                  <content>
-                     <sequence preserveOrder="true">
-                        <elementRef key="head" minOccurs="1" maxOccurs="1"/>
-                        <elementRef key="div" minOccurs="1" maxOccurs="unbounded"/>
-                        <!-- Un seul <head> précède le <body> qui sera suivi d'une succession de <div> -->
-                     </sequence>
-                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
                </elementSpec>
                <elementSpec ident="div" mode="change">
                   <attList>

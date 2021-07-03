@@ -356,8 +356,8 @@
         <body xml:lang="fr">
             <div type="letter">
                 <pb facs="IMG_1685.JPG"/>
-                <head>Lettre d'<persName n="sender">Hugues Panassié</persName> à <persName
-                        n="recipient">Charles Delaunay</persName></head>
+                <head>Lettre d'<persName n="sender" ref="#h_panassie">Hugues Panassié</persName> à <persName
+                        n="recipient" ref="#ch_delaunay">Charles Delaunay</persName></head>
                 <opener>
                     <dateline>
                         <date when-iso="1940-11-12">12 novembre 1940</date>
@@ -427,8 +427,8 @@
             </div>
             <div type="letter">
                 <pb facs="IMG_1674.JPG"/>
-                <head>Lettre d'<persName n="sender">Hugues Panassié</persName> à <persName
-                        n="recipient">Charles Delaunay</persName></head>
+                <head>Lettre d'<persName n="sender" ref="#h_panassie">Hugues Panassié</persName> à <persName
+                    n="recipient" ref="#ch_delaunay">Charles Delaunay</persName></head>
                 <opener>
                     <dateline>
                         <date when-iso="1943-09-16">16 septembre 1943</date>
@@ -543,8 +543,8 @@
             </div>
             <div type="letter">
                 <pb facs="IMG_1779.JPG"/>
-                <head>Lettre d'<persName n="sender">Hugues Panassié</persName> à <persName
-                        n="recipient">Charles Delaunay</persName></head>
+                <head>Lettre d'<persName n="sender" ref="#h_panassie">Hugues Panassié</persName> à <persName
+                    n="recipient" ref="#ch_delaunay">Charles Delaunay</persName></head>
                 <opener>
                     <dateline>
                         <date when-iso="1944-11-24">24 novembre 1944</date>
