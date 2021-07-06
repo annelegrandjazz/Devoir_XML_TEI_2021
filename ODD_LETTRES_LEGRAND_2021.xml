@@ -35,8 +35,8 @@
                lettres extraites de la correspondance entre Hugues Panassié et Charles Delaunay. Par
                la suite, ces règles pourront être utilisées, modifiées ou adaptées à l'ensemble de
                la correspondance.</p>
-            <p>Une première partie contextualisera le projet d'édition numérique et présentera ses
-               éventuelles exploitations. Une deuxième et troisième partie s'intéresseront aux deux
+            <p>La première partie contextualisera le projet d'édition numérique et présentera ses
+               éventuelles exploitations. Les deuxième et troisième parties s'intéresseront aux deux
                grandes parties structurantes de l'encodage : l'élément <tag>teiHeader</tag> qui
                contient les métadonnées décrivant la lettre puis, l'élément <tag>text</tag>
                contenant une représentation d'une lettre.</p>
@@ -58,7 +58,7 @@
                      son président Hugues Panassié, demeurant aussi en zone libre à Montauban. Dans
                      la première lettre choisie pour ce projet d'édition numérique, Hugues Panassié
                      répond à ce courrier envoyé par Charles Delaunay. Alors que l'exportation des
-                     disques des États-Unis est interrompue, Charles Delaunay contiune néanmoins
+                     disques des États-Unis est interrompue, Charles Delaunay contiue néanmoins
                      d'enrichir sa <hi rend="italic">Hot Discographie</hi> pour en publier une
                      troisième édition pendant l'Occupation. Hugues Panassié relie et corrige les
                      épreuves comme le révèle la lettre de 1943. Le choix de la dernière lettre
@@ -293,7 +293,7 @@
                         contient l'élément <gi>person</gi> pour chaque personne indexée. Cet élément
                         comprend les attributs <att>sex</att> et <att>xml:id</att> pour les
                         identifier. La valeur de <att>xml:id</att> est un identifiant permettant de
-                        référencer les différents noms de personne et de les pointer vers l'index
+                        référencer les différents noms de personnes et de les pointer vers l'index
                         lorsqu'ils sont cités dans le <tag>text</tag>. Ensuite, dans l'élement
                            <gi>persName</gi>, nous déclinons les balises <gi>forename</gi>,
                            <gi>surname</gi>. Une balise <gi>occupation</gi> clos l'élément
@@ -302,19 +302,19 @@
                            <gi>listRelation</gi> suivi de <gi>relation</gi>. Pour les parents,
                            <gi>relation</gi> comprend les attributs <att>name</att>,
                            <att>mutual</att> et <att>type</att> : <list>
-                           <item>La valeur <val>married_couple</val> pour l'attibut
+                           <item>La valeur <val>married_couple</val> pour l'attribut
                               <att>name</att>.</item>
                            <item>La valeur des noms de personnes mariés avec leur <att>xml:id</att>
-                              pour l'attibut <att>mutual</att>.</item>
-                           <item>La valeur <val>first_marriage</val> pour l'attibut
+                              pour l'attribut <att>mutual</att>.</item>
+                           <item>La valeur <val>first_marriage</val> pour l'attribut
                               <att>type</att>.</item>
                         </list> Pour les enfants, <gi>relation</gi> comprend les attributs
                            <att>name</att>, <att>active</att> et <att>passive</att> : <list>
-                           <item>La valeur <val>child</val> pour l'attibut <att>name</att>.</item>
+                           <item>La valeur <val>child</val> pour l'attribut <att>name</att>.</item>
                            <item>La valeur du nom de l'enfant avec le <att>xml:id</att> pour
-                              l'attibut <att>active</att>.</item>
+                              l'attribut <att>active</att>.</item>
                            <item>La valeur des noms des parents avec leur <att>xml:id</att> pour
-                              l'attibut <att>passive</att>.</item>
+                              l'attribut <att>passive</att>.</item>
                         </list>
                      </p>
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -359,12 +359,12 @@
                            <item>L'attribut <att>xml:id</att> donne comme valeur un identifiant
                               permettant de référencer le groupe et de le pointer vers l'index
                               lorsqu'il est cité dans le <tag>text</tag>.</item>
-                           <item>L'attibut <att>sex</att> indique si l'orchestre est composé d'homme
-                              ou de femme avec la valeur <val>male</val> ou
+                           <item>L'attribut <att>sex</att> indique si l'orchestre est composé d'hommes
+                              ou de femmes avec la valeur <val>male</val> ou
                               <val>female</val>.</item>
-                           <item>L'attibut <att>size</att> précise le nombre de musicien avec un
+                           <item>L'attribut <att>size</att> précise le nombre de musiciens avec un
                               chiffre pour valeur.</item>
-                           <item>L'attibut <att>role</att> comprend la valeur
+                           <item>L'attribut <att>role</att> comprend la valeur
                               <val>orchestre</val>.</item>
                         </list>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -373,7 +373,7 @@
                            </personGrp>
                         </egXML>
                      </p>
-                     <p>L'index des noms d'organisme est indiqué par l'élement <gi>listOrg</gi>. Son
+                     <p>L'index des noms d'organismes est indiqué par l'élement <gi>listOrg</gi>. Son
                         attribut <att>type</att> divise cette liste en quatre catégories avec une
                         valeur <val>phono_company</val> pour les sociétés regroupant plusieurs
                         marques de disques, une valeur <val>record_company</val> pour une marque de
@@ -387,7 +387,7 @@
                         valeur <val>1945</val> afin d'indiquer le nom d'un organisme à un moment
                         donné. Une balise <gi>addName</gi> peut être insérée dans <gi>orgName</gi>
                         afin de préciser le diminutif sous lequel l'organisme est le plus connu. Les
-                        noms de magazine sont mis en italiques. <egXML
+                        noms de magazines sont mis en italiques. <egXML
                            xmlns="http://www.tei-c.org/ns/Examples">
                            <listOrg type="magazine">
                               <org xml:id="jazz_information">
@@ -423,10 +423,10 @@
                   </p>
                   <div4>
                      <head>L'élément <tag>pb</tag></head>
-                     <p>L'élément <gi>pb</gi> avec l'attibut <att>facs</att> donne comme valeur le
+                     <p>L'élément <gi>pb</gi> avec l'attribut <att>facs</att> donne comme valeur le
                         nom du fichier numérique : <val>IMG_1685.JPG</val>. Les trois lettres du
                         devoir tiennent sur une page mais ceci aurait permis d'indiquer le numéro du
-                        fichier numérique pour la page suivante d'une lettre si celle_ci comprenait
+                        fichier numérique pour la page suivante d'une lettre si celle-ci comprenait
                         plusieurs pages.</p>
                   </div4>
                   <div4>

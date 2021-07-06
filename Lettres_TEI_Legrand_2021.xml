@@ -158,11 +158,6 @@
                                 Kennedy</forename><surname>Ellington</surname><addName>Duke</addName></persName>
                         <occupation>pianiste, chef d'orchestre et compositeur</occupation>
                     </person>
-                    <person sex="male" xml:id="count">
-                        <persName><forename>William
-                                James</forename><surname>Basie</surname><addName>Count</addName></persName>
-                        <occupation>pianiste, chef d'orchestre et compositeur</occupation>
-                    </person>
                     <person sex="male" xml:id="armstrong">
                         <persName><forename>Louis</forename><surname>Armstrong</surname></persName>
                         <occupation>trompettiste et chanteur</occupation>
@@ -185,14 +180,14 @@
                         <occupation>saxophoniste ténor et clarinettiste</occupation>
                     </person>
                     <personGrp xml:id="quintette" sex="male" size="5" role="orchestre">
-                        <persName>Quintette du Hot Club de France</persName>
+                        <persName><addName>Quintette du Hot Club de France</addName></persName>
                     </personGrp>
                     <personGrp xml:id="chocolate_dandies" sex="male" size="6" role="orchestre">
-                        <persName>Chocolate Dandies</persName>
+                        <persName>Chocolate Dandies<addName>Chocolate Dandies</addName></persName>
                     </personGrp>
                     <personGrp xml:id="metronome_all_star" sex="male" size="approx 15"
                         role="orchestre">
-                        <persName>Metronome All Star</persName>
+                        <persName><addName>Metronome All Star</addName>Metronome All Star</persName>
                     </personGrp>
                     <person sex="male" xml:id="guy_durand">
                         <persName><forename>Guy</forename><surname>Durand</surname></persName>
@@ -323,24 +318,24 @@
                 </listOrg>
                 <listOrg type="record_company">
                     <org xml:id="swing">
-                        <orgName>Swing</orgName>
+                        <orgName><addName>Swing</addName>Swing</orgName>
                     </org>
                     <org xml:id="paramount">
-                        <orgName>Paramount</orgName>
+                        <orgName><addName>Paramount</addName></orgName>
                     </org>
                     <org xml:id="variety">
-                        <orgName>Variety</orgName>
+                        <orgName><addName>Variety</addName></orgName>
                     </org>
                     <org xml:id="vocalion">
-                        <orgName>Vocalion</orgName>
+                        <orgName><addName>Vocalion</addName></orgName>
                     </org>
                 </listOrg>
                 <listOrg type="magazine">
                     <org xml:id="jazz_information">
-                        <orgName><hi rend="italic">Jazz Information</hi></orgName>
+                        <orgName><addName><hi rend="italic">Jazz Information</hi></addName></orgName>
                     </org>
                     <org xml:id="jazz_hot">
-                        <orgName><hi rend="italic">Jazz Hot</hi></orgName>
+                        <orgName><addName><hi rend="italic">Jazz Hot</hi></addName></orgName>
                     </org>
                 </listOrg>
                 <listOrg type="radio">
@@ -536,7 +531,7 @@
                             >Demi-Tasse</hi> de <persName ref="#barney_bigard">Barney</persName> et
                         probablement les autres de la même session, c'est <persName
                             ref="#hayes_alvis">Hayes Alvis</persName>.</p>
-                    <p>Les <persName>Fats</persName> faits en <date when-iso="1938">1938</date> en
+                    <p>Les <persName ref="#fats_waller">Fats</persName> faits en <date when-iso="1938">1938</date> en
                             <placeName ref="#angleterre">Angleterre</placeName> sont placés beaucoup
                         trop tôt. Il me semble qu'ils viennent juste après les disques de grand
                         orchestre (<hi rend="italic">In gloaming</hi>, <hi rend="italic">The
@@ -575,7 +570,7 @@
                     accusé réception d’aucune.</p>
                 <p>Depuis la Libération, je n'ai reçu qu'une seule lettre de vous ; celle dans
                     laquelle vous me demandiez la liste des disques à rééditer. Vous me disiez aussi
-                    que vous occupiez un poste important à la <orgName ref="radio">Radio</orgName>
+                    que vous occupiez un poste important à la <orgName ref="#radio_nat_franc">Radio</orgName>
                     et que vous aviez l'intention de me faire faire une série d'émissions, en
                     reprenant les choses par la base. Je vous ai répondu – mais avez-vous, oui ou
                     non, reçu cette lettre - que j'étais prêt à faire ces émissions, mais que je ne

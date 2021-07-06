@@ -212,7 +212,7 @@
                 </body>
             </html>
         </xsl:result-document>
-        
+              
         <!-- PAGE DES INDEX DES NOMS DE PERSONNES-->
         <xsl:result-document href="{$pathIndexPers}" method="html" indent="yes">
             <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
@@ -241,10 +241,10 @@
                 </body>
             </html>
         </xsl:result-document>
-    </xsl:template> 
+
     
-    <!-- PAGE DES INDEX DES NOMS DE LIEUX-->
-    <xsl:result-document href="{$pathIndexLieux}" method="html" indent="yes">
+     <!-- PAGE DES INDEX DES NOMS DE LIEUX-->
+     <xsl:result-document href="{$pathIndexLieux}" method="html" indent="yes">
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html lang="fr">
             <xsl:copy-of select="$doc_head"/>
@@ -269,7 +269,39 @@
             </body>
           </html>
     </xsl:result-document>
+        
+        <!-- PAGE DES INDEX DES NOMS D'ORGANISMES-->
+        <xsl:result-document href="{$pathIndexOrg}" method="html" indent="yes">
+            <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+            <html lang="fr">
+                <xsl:copy-of select="$doc_head"/>
+                <body>
+                    <xsl:copy-of select="$navheader"/>
+                    <div class="arriere_plan">
+                        <div class="index-global">
+                            <h1>Index des noms d'organismes</h1>
+                            <div>
+                                <p style='margin-bottom: 0.25%'><i>Les numéros et les liens renvoient aux lettres.</i></p>
+                            </div>
+                            <div class="index">
+                            </div>
+                            <div>
+                                <xsl:call-template name="compagniedisques"/>
+                                <br></br>
+                                <xsl:call-template name="marquedisques"/>
+                                <br></br>
+                                <xsl:call-template name="magazine"/>
+                                <br></br>
+                                <xsl:call-template name="radio"/>
+                            </div>
+                        </div>
+                    </div>
+                    <xsl:copy-of select="$footer"/>
+                </body>
+            </html>
+        </xsl:result-document>
    </xsl:template>
+
 
     
     <!-- RÈGLES POUR LE TEXTE -->
@@ -431,7 +463,7 @@
                 </xsl:for-each>
             </xsl:element>
         </xsl:element>
-    </xsl:template>
+      </xsl:template>
     
     <xsl:template name="autres">
         <xsl:element name="div">
@@ -567,16 +599,8 @@
                     <xsl:sort select="/orgName" order="ascending"/>
                     <xsl:element name="p">
                         <xsl:element name="b">
-                            <xsl:value-of select="orgName"/>
+                            <xsl:value-of select="addName"/>
                             <!-- intitulé de l'entrée d'index en bold : prénom suivi du nom ; -->
-                            <xsl:text> </xsl:text>
-                            <xsl:if test="addName">
-                                <xsl:text>(</xsl:text>
-                                <!-- entre pranthèses : s'il existe, le surnom développé, -->
-                                <xsl:value-of select="addName"/>
-                                <xsl:text>)</xsl:text>
-                                <xsl:text>, </xsl:text>
-                            </xsl:if>
                         </xsl:element>
                         <xsl:variable name="idOrg">
                             <!-- variable $idPerson contenant la valeur de l'@xml:id de <person> dans le <particDesc>  -->
@@ -603,5 +627,122 @@
                 </xsl:for-each>
             </xsl:element>
        </xsl:element>
-    </xsl:template>  
+    </xsl:template>
+    <xsl:template name="marquedisques">
+        <xsl:element name="div">
+            <h2>Les marques de disques</h2>
+            <xsl:element name="div">
+                <xsl:for-each select="//listOrg[@type='record_company']//orgName">
+                    <!-- tri de A à Z des entrées d'index -->
+                    <xsl:sort select="/orgName" order="ascending"/>
+                    <xsl:element name="p">
+                        <xsl:element name="b">
+                            <xsl:value-of select="addName"/>
+                            <!-- intitulé de l'entrée d'index en bold : prénom suivi du nom ; -->
+                            <xsl:text> </xsl:text>
+                        </xsl:element>
+                        <xsl:variable name="idOrg">
+                            <!-- variable $idPerson contenant la valeur de l'@xml:id de <person> dans le <particDesc>  -->
+                            <xsl:value-of select="parent::org/@xml:id"/>
+                        </xsl:variable>
+                        <xsl:text> : </xsl:text>
+                        <xsl:for-each-group select="ancestor::TEI//body//orgName[translate(@ref, '#','')=$idOrg]" group-by="ancestor::div/@n">
+                            <!-- occurence du nom (<orgName> dans le <body> dont @ref sans le '#' est équivalent à $Personid) groupé par paragraphe (<div> -->
+                            <!-- est affichée le numéro de la lettre concernée (@n de <div>) -->
+                            <!-- le numéro est un lien qui pointe vers la lettre -->
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:text>lettre</xsl:text>
+                                    <xsl:value-of select="ancestor::div/@n"/>
+                                    <xsl:text>.html</xsl:text>
+                                </xsl:attribute>
+                                <xsl:value-of select="ancestor::div/@n"/>
+                            </xsl:element>
+                            <!-- occurence suivie par une virgule si elle n'est pas la dernière, par un point si elle l'est -->
+                            <xsl:if test="position()!= last()">, </xsl:if>
+                            <xsl:if test="position() = last()">.</xsl:if>
+                        </xsl:for-each-group>
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template name="magazine">
+        <xsl:element name="div">
+            <h2>Les journaux de jazz</h2>
+            <xsl:element name="div">
+                <xsl:for-each select="//listOrg[@type='magazine']//orgName">
+                    <!-- tri de A à Z des entrées d'index -->
+                    <xsl:sort select="/orgName" order="ascending"/>
+                    <xsl:element name="p">
+                        <xsl:element name="b">
+                            <xsl:value-of select="addName"/>
+                            <!-- intitulé de l'entrée d'index en bold : prénom suivi du nom ; -->
+                            <xsl:text> </xsl:text>
+                        </xsl:element>
+                        <xsl:variable name="idOrg">
+                            <!-- variable $idPerson contenant la valeur de l'@xml:id de <person> dans le <particDesc>  -->
+                            <xsl:value-of select="parent::org/@xml:id"/>
+                        </xsl:variable>
+                        <xsl:text> : </xsl:text>
+                        <xsl:for-each-group select="ancestor::TEI//body//orgName[translate(@ref, '#','')=$idOrg]" group-by="ancestor::div/@n">
+                            <!-- occurence du nom (<orgName> dans le <body> dont @ref sans le '#' est équivalent à $Personid) groupé par paragraphe (<div> -->
+                            <!-- est affichée le numéro de la lettre concernée (@n de <div>) -->
+                            <!-- le numéro est un lien qui pointe vers la lettre -->
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:text>lettre</xsl:text>
+                                    <xsl:value-of select="ancestor::div/@n"/>
+                                    <xsl:text>.html</xsl:text>
+                                </xsl:attribute>
+                                <xsl:value-of select="ancestor::div/@n"/>
+                            </xsl:element>
+                            <!-- occurence suivie par une virgule si elle n'est pas la dernière, par un point si elle l'est -->
+                            <xsl:if test="position()!= last()">, </xsl:if>
+                            <xsl:if test="position() = last()">.</xsl:if>
+                        </xsl:for-each-group>
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template name="radio">
+        <xsl:element name="div">
+            <h2>Les radios</h2>
+            <xsl:element name="div">
+                <xsl:for-each select="//listOrg[@type='radio']//orgName">
+                    <!-- tri de A à Z des entrées d'index -->
+                    <xsl:sort select="/orgName" order="ascending"/>
+                    <xsl:element name="p">
+                        <xsl:element name="b">
+                            <xsl:value-of select="addName"/>
+                            <!-- intitulé de l'entrée d'index en bold : prénom suivi du nom ; -->
+                            <xsl:text> </xsl:text>
+                        </xsl:element>
+                        <xsl:variable name="idOrg">
+                            <!-- variable $idPerson contenant la valeur de l'@xml:id de <person> dans le <particDesc>  -->
+                            <xsl:value-of select="parent::org/@xml:id"/>
+                        </xsl:variable>
+                        <xsl:text> : </xsl:text>
+                        <xsl:for-each-group select="ancestor::TEI//body//orgName[translate(@ref, '#','')=$idOrg]" group-by="ancestor::div/@n">
+                            <!-- occurence du nom (<orgName> dans le <body> dont @ref sans le '#' est équivalent à $Personid) groupé par paragraphe (<div> -->
+                            <!-- est affichée le numéro de la lettre concernée (@n de <div>) -->
+                            <!-- le numéro est un lien qui pointe vers la lettre -->
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:text>lettre</xsl:text>
+                                    <xsl:value-of select="ancestor::div/@n"/>
+                                    <xsl:text>.html</xsl:text>
+                                </xsl:attribute>
+                                <xsl:value-of select="ancestor::div/@n"/>
+                            </xsl:element>
+                            <!-- occurence suivie par une virgule si elle n'est pas la dernière, par un point si elle l'est -->
+                            <xsl:if test="position()!= last()">, </xsl:if>
+                            <xsl:if test="position() = last()">.</xsl:if>
+                        </xsl:for-each-group>
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
 </xsl:stylesheet>
