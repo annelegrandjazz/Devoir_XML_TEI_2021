@@ -410,8 +410,9 @@
                <div3>
                   <head>Le <tag>div</tag></head>
                   <p> L'élément <gi>div</gi> avec l'attribut <att>type</att> de valeur
-                        <val>letter</val> englobe individuellement chaque lettre. Puis, il est suivi
-                     des éléments suivants : <specList>
+                        <val>letter</val> englobe individuellement chaque lettre et l'attribut
+                        <att>n</att> permet de renvoyer une entrée d'index à la lettre dans laquelle
+                     elle est citée. Puis, le <gi>div</gi> est suivi par les éléments suivants : <specList>
                         <specDesc key="pb"/>
                         <specDesc key="head"/>
                         <specDesc key="opener"/>
@@ -461,30 +462,33 @@
                   </div4>
                   <div4>
                      <head>L'élément <tag>p</tag></head>
-                     <p>Chaque paragraphe de la lettre vont ensuite être indiqué par cet élément <gi>p</gi>.</p>
+                     <p>Chaque paragraphe de la lettre vont ensuite être indiqué par cet élément
+                           <gi>p</gi>.</p>
                   </div4>
                   <div4>
                      <head>Le <tag>closer</tag></head>
-                     <p>Le <gi>closer</gi> permet d'indiquer les salutations de fin de lettre avec les balises <gi>salute</gi> et <gi>signed</gi>.
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <p>Le <gi>closer</gi> permet d'indiquer les salutations de fin de lettre avec
+                        les balises <gi>salute</gi> et <gi>signed</gi>. <egXML
+                           xmlns="http://www.tei-c.org/ns/Examples">
                            <closer>
                               <salute>Bien à vous</salute>
                               <signed>Hugues</signed>
                            </closer>
-                        </egXML>                       
+                        </egXML>
                      </p>
                   </div4>
                   <div4>
                      <head>Le <tag>postscript</tag></head>
-                     <p>Le post-scriptum ou l'élément <gi>postscript</gi> est suivi de deux balises : le <gi>label</gi> et le <gi>p</gi>.
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <p>Le post-scriptum ou l'élément <gi>postscript</gi> est suivi de deux balises
+                        : le <gi>label</gi> et le <gi>p</gi>. <egXML
+                           xmlns="http://www.tei-c.org/ns/Examples">
                            <postscript>
                               <label>P.S.</label>
                               <p>Pour le fric, je crois que <orgName ref="#pathe_marconi"
-                                 >Pathé-Marconi</orgName> a le droit de m'envoyer au moins deux mille
-                                 balles.</p>
+                                    >Pathé-Marconi</orgName> a le droit de m'envoyer au moins deux
+                                 mille balles.</p>
                            </postscript>
-                        </egXML>                     
+                        </egXML>
                      </p>
                   </div4>
                </div3>
@@ -962,10 +966,10 @@
                <!-- Création d'une contrainte d'enchaînement des éléments <resp> et <persName> au sein de la balise <respStmt> -->
                <elementSpec ident="respStmt" mode="change">
                   <content>
-                  <sequence preserveOrder="true">
-                     <elementRef key="resp"/>
-                     <elementRef key="persName"/>
-                  </sequence>
+                     <sequence preserveOrder="true">
+                        <elementRef key="resp"/>
+                        <elementRef key="persName"/>
+                     </sequence>
                   </content>
                   <attList>
                      <attDef ident="facs" mode="delete"/>

@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Lettres d'Hugues Panassié à Charles Delaunay</title>
+                <title>Les Lettres d'Hugues Panassié à Charles Delaunay</title>
                 <author>Hugues Panassié</author>
                 <respStmt>
                     <resp>Encodage réalisé dans le cadre du devoir du Master 2 TNAH 2021</resp>
@@ -354,10 +354,11 @@
     </teiHeader>
     <text>
         <body xml:lang="fr">
-            <div type="letter">
+            <div type="letter" n="1">
                 <pb facs="IMG_1685.JPG"/>
-                <head>Lettre d'<persName n="sender" ref="#h_panassie">Hugues Panassié</persName> à <persName
-                        n="recipient" ref="#ch_delaunay">Charles Delaunay</persName></head>
+                <head>Lettre d'<persName n="sender" ref="#h_panassie">Hugues Panassié</persName> à
+                        <persName n="recipient" ref="#ch_delaunay">Charles
+                    Delaunay</persName></head>
                 <opener>
                     <dateline>
                         <date when-iso="1940-11-12">12 novembre 1940</date>
@@ -365,7 +366,7 @@
                     <salute>Vieux <persName ref="#ch_delaunay">Charles</persName>,</salute>
                 </opener>
                 <p>Je tape cette lettre en deux exemplaires, et j'envoie l'un <placeName
-                        ref="#chez_nourry">chez</placeName>
+                        ref="#chez_nourry">chez </placeName>
                     <persName ref="#Mme_Nourry">Mme Nourry</persName>, l'autre à <placeName
                         ref="#mougins">Mougins</placeName>, pour qu'elle ait plus de chance de vous
                     parvenir.</p>
@@ -397,9 +398,9 @@
                         Juin 1939</date> à <date when-iso="1940-06-15">15 Juin 1940</date> - et
                     qu'étant donné la diminution notable de frais d'enregistrement au cours de cette
                     année, et la vente constante des anciens disques, j'ai calculé que nous
-                    pourrions bien avoir à toucher douze mille balles chacun, et peut-être plus (surtout
-                    si par hasard les Anglais avaient payé un acompte sur les droits quelque temps
-                    avant la rupture de Juin dernier).</p>
+                    pourrions bien avoir à toucher douze mille balles chacun, et peut-être plus
+                    (surtout si par hasard les Anglais avaient payé un acompte sur les droits
+                    quelque temps avant la rupture de Juin dernier).</p>
                 <p>Si vous n'allez pas à <placeName ref="#paris">Paris</placeName> j'irais bien
                     volontiers moi-même, du moment qu'il y a quelque chose d'’utile à y faire, mais
                     dans ce cas je voudrais, si c'était possible, l'assurance de toucher au moins
@@ -425,10 +426,11 @@
                         balles.</p>
                 </postscript>
             </div>
-            <div type="letter">
+            <div type="letter" n="2">
                 <pb facs="IMG_1674.JPG"/>
-                <head>Lettre d'<persName n="sender" ref="#h_panassie">Hugues Panassié</persName> à <persName
-                    n="recipient" ref="#ch_delaunay">Charles Delaunay</persName></head>
+                <head>Lettre d'<persName n="sender" ref="#h_panassie">Hugues Panassié</persName> à
+                        <persName n="recipient" ref="#ch_delaunay">Charles
+                    Delaunay</persName></head>
                 <opener>
                     <dateline>
                         <date when-iso="1943-09-16">16 septembre 1943</date>
@@ -451,25 +453,25 @@
                     dans <hi rend="italic">I ain't got nobody</hi>, ainsi que la clarinette dans ce
                     même disque et dans <hi rend="italic">Mighty like the blues</hi>.</p>
                 <p><persName ref="#lionel_hampton">L. Hampton</persName> - Il me parait important de
-                    mentionner que <persName ref="#benny_carter">Benny Carter</persName> est l'auteur
-                    des arrangements de la session <hi rend="italic">Shoe shiner's drag</hi>, et
-                    qu'il joue la clarinette dans cette face ainsi que dans <hi rend="italic"
-                        >Muskrat ramble</hi>.</p>
+                    mentionner que <persName ref="#benny_carter">Benny Carter</persName> est
+                    l'auteur des arrangements de la session <hi rend="italic">Shoe shiner's
+                        drag</hi>, et qu'il joue la clarinette dans cette face ainsi que dans <hi
+                        rend="italic">Muskrat ramble</hi>.</p>
                 <p><persName ref="#frank_teschemacher">Teschemacher</persName> - Quoi qu'en pensent
                     les Américains, je suppose que c'est bien Tesch dans <hi rend="italic">Jazz me
                         blues</hi> et <hi rend="italic">Sister Kate</hi> en <orgName
                         ref="#paramount">Paramount</orgName>. Mais comme ne l’aimant plus je ne suis
                     plus aussi sûr de moi, je vous laisse juge de faire ce qui vous paraîtra le plus
                     probable.</p>
-                <p><persName ref="#teddy_wilson">Teddy Wilson</persName> - Je n'ai pas vu mentionné le
-                    personnel comprenant trois saxes dont deux sont <persName ref="#gene_sedric"
+                <p><persName ref="#teddy_wilson">Teddy Wilson</persName> - Je n'ai pas vu mentionné
+                    le personnel comprenant trois saxes dont deux sont <persName ref="#gene_sedric"
                         >Sedric</persName> et <persName ref="#pee_wee_russell">Pee Wee
                         Russell</persName> et le troisième un type comme <persName
                         ref="#hilton_jefferson">Jefferson</persName> ou un autre alto de ce genre
                     (plutôt <persName ref="#tab_smith">Tab Smith</persName>, il me semble). Je n'ai
                     malheureusement aucun renseignement à vous donner à ce sujet.</p>
-                <p><persName ref="#rex_stewart">Rex</persName> - Il vous manque une session qui a été
-                    faite juste avant le voyage de <persName ref="#duke">Duke</persName> à
+                <p><persName ref="#rex_stewart">Rex</persName> - Il vous manque une session qui a
+                    été faite juste avant le voyage de <persName ref="#duke">Duke</persName> à
                         <placeName ref="#paris">Paris</placeName>, donc à placer juste avant les
                         <orgName ref="#swing">Swing</orgName>. C'est <hi rend="italic">Fat Stuff
                         Serenade</hi> - <hi rend="italic">I'll come back for more</hi> (<orgName
@@ -498,18 +500,18 @@
                         Band</persName>.</p>
                 <p>Évidemment, il semblerait plus logique de faire des notices aussi aux <hi
                         rend="italic">divers</hi><note type="edition_electronique" place="foot"
-                        n="1"><persName ref="#h_panassie">Hugues Panassié</persName> fait référence
-                        à un chapitre de la <hi rend="italic">Hot Discographie 1943</hi> de
-                            <persName ref="#ch_delaunay">Charles Delaunay</persName> parue en <date
-                            when-iso="1944">1944</date>.</note>, mais cela en fera un nombre
-                    effrayant. Vous me demandez conseil, je suis bien embarrassé. Etant donné que
-                    sur certains on manque totalement de détails biographiques, le plus simple
+                        n="1" anchored="true"><persName ref="#h_panassie">Hugues Panassié</persName>
+                        fait référence à un chapitre de la <hi rend="italic">Hot Discographie
+                            1943</hi> de <persName ref="#ch_delaunay">Charles Delaunay</persName>
+                        parue en <date when-iso="1944">1944</date>.</note>, mais cela en fera un
+                    nombre effrayant. Vous me demandez conseil, je suis bien embarrassé. Etant donné
+                    que sur certains on manque totalement de détails biographiques, le plus simple
                     serait peut-être de laisser tomber. Si, par contre, vous croyez pouvoir faire
                     quelque chose de suffisamment précis sur chacun, cela change tout.</p>
                 <p>N'oubliez pas de me retenir les exemplaires de la <hi rend="italic"
-                        >Disco</hi><note type="edition_electronique" place="foot" n="2"><hi
-                            rend="italic">Hot Discographie 1943</hi>.</note> demandés. Vous ne
-                    m'avez pas répondu à ce sujet.</p>
+                        >Disco</hi><note type="edition_electronique" place="foot" n="2"
+                        anchored="true"><hi rend="italic">Hot Discographie 1943</hi>.</note>
+                    demandés. Vous ne m'avez pas répondu à ce sujet.</p>
                 <p>Pour le premier numéro de <orgName ref="#jazz_hot"><hi rend="italic">Jazz
                             Hot</hi></orgName>, je pense surtout qu'il serait bon de résumer les
                     nouvelles importantes depuis la guerre, c'est à dire mettre les lecteurs au
@@ -541,10 +543,11 @@
                             Sheik</hi>, etc.)</p>
                 </postscript>
             </div>
-            <div type="letter">
+            <div type="letter" n="3">
                 <pb facs="IMG_1779.JPG"/>
-                <head>Lettre d'<persName n="sender" ref="#h_panassie">Hugues Panassié</persName> à <persName
-                    n="recipient" ref="#ch_delaunay">Charles Delaunay</persName></head>
+                <head>Lettre d'<persName n="sender" ref="#h_panassie">Hugues Panassié</persName> à
+                        <persName n="recipient" ref="#ch_delaunay">Charles
+                    Delaunay</persName></head>
                 <opener>
                     <dateline>
                         <date when-iso="1944-11-24">24 novembre 1944</date>
@@ -552,8 +555,8 @@
                     <salute>Vieux <persName ref="#ch_delaunay">Charles</persName>,</salute>
                 </opener>
                 <p>J'apprends aujourd'hui seulement par <persName ref="#ray_beau">Raymond
-                        Beau</persName> que vous n'avez jamais reçu la liste des cinq cents disques à
-                    rééditer que j'avais chargé un ami de vous porter il y d'un mois!</p>
+                        Beau</persName> que vous n'avez jamais reçu la liste des cinq cents disques
+                    à rééditer que j'avais chargé un ami de vous porter il y d'un mois!</p>
                 <p>Je vous envoie donc un autre exemplaire de cette liste. Je sais qu'il y a
                     là-dedans des tas de disques qu'on ne peut faire rééditer à l'heure actuelle
                     puisque les matrices ne sont pas en <placeName ref="#france">France</placeName>,
