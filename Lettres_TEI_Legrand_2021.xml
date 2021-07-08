@@ -81,17 +81,17 @@
                     </place>
                     <place xml:id="mougins" type="town">
                         <placeName><country>France</country><settlement type="town"
-                                >Mougins</settlement><note>Lieu de résidence de Sonia et Robert
-                                Delaunay en <date when-iso="1940">1940</date>.</note></placeName>
+                                >Mougins</settlement><note>lieu de résidence de Sonia et Robert
+                                Delaunay en <date when-iso="1940">1940</date></note></placeName>
                     </place>
                     <place xml:id="chez_nourry" type="building">
                         <placeName>Chez Madame Nourry</placeName>
                         <location>
                             <country>France</country>
-                            <settlement type="town">Paris</settlement>
+                            <settlement type="city">Paris</settlement>
                             <district type="arrondissement" n="9">9ème</district>
                             <placeName type="rue"><num>30</num>rue du conservatoire</placeName>
-                        </location>
+                       </location>
                     </place>
 
                 </listPlace>
@@ -180,14 +180,14 @@
                         <occupation>saxophoniste ténor et clarinettiste</occupation>
                     </person>
                     <personGrp xml:id="quintette" sex="male" size="5" role="orchestre">
-                        <persName><addName>Quintette du Hot Club de France</addName></persName>
+                        <persName><note>Quintette du Hot Club de France</note>Quintette du Hot Club de France</persName>
                     </personGrp>
                     <personGrp xml:id="chocolate_dandies" sex="male" size="6" role="orchestre">
-                        <persName>Chocolate Dandies<addName>Chocolate Dandies</addName></persName>
+                        <persName><note>Chocolate Dandies</note>Chocolate Dandies</persName>
                     </personGrp>
                     <personGrp xml:id="metronome_all_star" sex="male" size="approx 15"
                         role="orchestre">
-                        <persName><addName>Metronome All Star</addName>Metronome All Star</persName>
+                        <persName>Metronome All Star<note>Metronome All Star</note></persName><note>Metronome All Star</note>
                     </personGrp>
                     <person sex="male" xml:id="guy_durand">
                         <persName><forename>Guy</forename><surname>Durand</surname></persName>

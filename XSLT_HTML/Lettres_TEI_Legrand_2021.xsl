@@ -444,7 +444,7 @@
                         </xsl:variable>
                         <xsl:text> : </xsl:text>
                         <xsl:for-each-group select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]" group-by="ancestor::div/@n">
-                            <!-- occurence du nom (<placeName> dans le <body> dont @ref sans le '#' est équivalent à $Personid) groupé par paragraphe (<div> -->
+                            <!-- occurence du nom (<persName> dans le <body> dont @ref sans le '#' est équivalent à $Personid) groupé par paragraphe (<div> -->
                             <!-- est affichée le numéro de la lettre concernée (@n de <div>) -->
                             <!-- le numéro est un lien qui pointe vers la lettre -->
                             <xsl:element name="a">
@@ -453,7 +453,7 @@
                                     <xsl:value-of select="ancestor::div/@n"/>
                                     <xsl:text>.html</xsl:text>
                                 </xsl:attribute>
-                                <xsl:value-of select="ancestor::div/@n"/>
+                                    <xsl:value-of select="ancestor::div/@n"/>
                             </xsl:element>
                             <!-- occurence suivie par une virgule si elle n'est pas la dernière, par un point si elle l'est -->
                             <xsl:if test="position()!= last()">, </xsl:if>
@@ -486,15 +486,18 @@
                                 <xsl:text>)</xsl:text>
                                 <xsl:text>, </xsl:text>
                             </xsl:if>
-
+                            <xsl:if test="note">
+                                <xsl:value-of select="note"/>
+                            </xsl:if>
                         </xsl:element>
                         <xsl:variable name="idPerson">
                             <!-- variable $idPerson contenant la valeur de l'@xml:id de <person> dans le <particDesc>  -->
                             <xsl:value-of select="parent::person/@xml:id"/>
+                            <xsl:value-of select="parent::personGrp/@xml:id"/>
                         </xsl:variable>
                         <xsl:text> : </xsl:text>
                         <xsl:for-each-group select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]" group-by="ancestor::div/@n">
-                            <!-- occurence du nom (<placeName> dans le <body> dont @ref sans le '#' est équivalent à $Personid) groupé par paragraphe (<div> -->
+                            <!-- occurence du nom (<persName> dans le <body> dont @ref sans le '#' est équivalent à $Personid) groupé par paragraphe (<div> -->
                             <!-- est affichée le numéro de la lettre concernée (@n de <div>) -->
                             <!-- le numéro est un lien qui pointe vers la lettre -->
                             <xsl:element name="a">
@@ -524,7 +527,28 @@
                     <xsl:element name="p">
                         <xsl:element name="b">
                             <!-- intitulé de l'entrée d'index en bold : le nom du lien en français (name) avec le pays (<country>) -->
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="place"/>
+                            <xsl:choose>
+                                <!-- ...le nom de la localité et du pays ou juste du pays (pour éviter une redondance entre le name et le settlement)... -->
+                                <xsl:when test="settlement[@type='city']">
+                                    <xsl:value-of select="settlement[@type='city']"/>
+                                </xsl:when>
+                                    <xsl:when test="settlement[@type='town']">
+                                    <xsl:value-of select="settlement"/>
+                                    <xsl:text> (</xsl:text>
+                                    <xsl:value-of select="note"/>
+                                    <xsl:text>) </xsl:text>
+                                </xsl:when>
+                                <xsl:when test="num">
+                                    <xsl:value-of select="num"/>
+                                    <xsl:text> rue du conservatoire, Paris, 9e (chez les Nourry) </xsl:text>
+                                    <!--c'est pas du bon encodage mais je veux bien une explication pour faire mieux-->
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="country"/>
+                                </xsl:otherwise>
+                            </xsl:choose> 
+
                         </xsl:element>
                         <xsl:variable name="Placeid">
                             <!-- variable $Placeid contenant la valeur de l'@xml:id de <place> dans le <settingDesc>  -->
